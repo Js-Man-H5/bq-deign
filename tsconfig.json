@@ -1,0 +1,62 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "allowJs": true,
+        "useDefineForClassFields": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "strict": true,
+        "jsx": "preserve",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": false,
+        "lib": [
+            "ESNext",
+            "DOM"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "packages/*"
+            ],
+            "@examples/*": [
+                "examples/*"
+            ]
+        },
+        "types": [
+            "vite/client",
+            "node",
+            "vue"
+        ],
+        "skipLibCheck": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "pretty": true,
+        "noEmit": true
+    },
+    "include": [
+        "scripts/*.ts",
+        "packages/**/*.vue",
+        "packages/**/*.d.ts",
+        "packages/**/*.ts",
+        "packages/directives/domResize.ts",
+        "examples/**/*.vue",
+        "examples/**/*.d.ts",
+        "examples/**/*.ts",
+        "docs/.vitepress/theme/*.ts",
+        "docs/**/*.d.ts",
+        "docs/**/*.ts",
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "vite.config.ts"
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ]
+}

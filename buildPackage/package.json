@@ -1,0 +1,20 @@
+{
+    "name": "bq-design",
+    "version": "1.0.0",
+    "description": "百秋组件库",
+    "main": "index.js",
+    "types": "./packages/index.d.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "fit",
+        "适配",
+        "组件库",
+        "scale",
+        "ScaleBox",
+        "vue3"
+    ],
+    "author": "jack.hai",
+    "license": "ISC"
+}
