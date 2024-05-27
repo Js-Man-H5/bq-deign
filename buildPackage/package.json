@@ -1,0 +1,30 @@
+{
+    "name": "bq-design",
+    "version": "1.0.2",
+    "description": "百秋组件库",
+    "main": "./lib/index.js",
+    "module": "./es/index.js",
+    "unpkg": "./dist/index.js",
+    "typings": "./es/index.d.ts",
+    "types": "./es/index.d.ts",
+    "style": "dist/index.css",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "homepage": "https://biuat.ibaiqiu.com/bq-design/",
+    "sideEffects": [
+        "dist/*",
+        "*.css",
+        "*.md"
+    ],
+    "keywords": [
+        "fit",
+        "适配",
+        "组件库",
+        "scale",
+        "ScaleBox",
+        "vue3"
+    ],
+    "author": "jack.hai",
+    "license": "ISC"
+}

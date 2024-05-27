@@ -1,0 +1,15 @@
+<!--
+ * @Author: jack.hai
+ * @Date: 2022-11-23 19:10:42
+ * @LastEditTime: 2022-11-27 15:53:21
+ * @Description: 
+-->
+# Ignore artifacts:
+build
+coverage
+
+# Ignore all HTML files:
+*.html
+
+.eslintrc.cjs
+dist/
