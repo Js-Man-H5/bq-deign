@@ -1,7 +1,7 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-05-20 16:02:52
- * @LastEditTime: 2024-05-23 09:59:13
+ * @LastEditTime: 2024-05-27 16:22:59
  * @Description: 
 -->
 # 数字翻牌器
@@ -56,7 +56,7 @@ onUnmounted(() => {
     background-color: black;
     :deep(.num-line) {
         font-size: 34px;
-        line-height: 34px;
+        line-height: 1;
         font-weight: bold;
     }
 }

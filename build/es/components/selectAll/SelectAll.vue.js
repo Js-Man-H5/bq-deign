@@ -5,7 +5,7 @@ const S = { style: { "padding-left": "11px" } }, D = /* @__PURE__ */ c({
   __name: "SelectAll",
   emits: ["change"],
   setup(q, { emit: p }) {
-    const v = p, e = f(), t = i(!1), d = i(!1), h = c({
+    const v = p, e = f(), a = i(!1), d = i(!1), h = c({
       props: {
         vnodes: {
           type: Object,
@@ -15,20 +15,21 @@ const S = { style: { "padding-left": "11px" } }, D = /* @__PURE__ */ c({
       render() {
         return this.vnodes;
       }
-    }), l = (n, a) => {
-      v("change", n, a);
-    }, m = (n) => {
-      if (e["onUpdate:value"] || console.warn("v-model:value 不存在"), n.target.checked)
+    }), l = (t, n) => {
+      v("change", t, n);
+    }, m = (t) => {
+      if (e["onUpdate:value"] || console.warn("v-model:value 不存在"), t.target.checked)
         if (e.options && e.options.length > 0) {
-          t.value = n.target.value;
-          const a = e.options.map((r) => r.value);
-          e["onUpdate:value"] && e["onUpdate:value"](a), l(a, e.options);
+          a.value = t.target.value;
+          const n = e.options.map((r) => r.value);
+          e["onUpdate:value"] && e["onUpdate:value"](n), l(n, e.options);
         } else
-          t.value = !1;
+          a.value = !1;
       else
-        e["onUpdate:value"] && e["onUpdate:value"]([]), t.value = n.target.value, l([], []);
+        e["onUpdate:value"] && e["onUpdate:value"]([]), a.value = t.target.value, l([], []);
     }, u = () => {
-      d.value = Array.isArray(e.value) && !!e.value.length && e.value.length !== e.options?.length, t.value = Array.isArray(e.value) && e.value.length === e.options?.length;
+      var t, n;
+      d.value = Array.isArray(e.value) && !!e.value.length && e.value.length !== ((t = e.options) == null ? void 0 : t.length), a.value = Array.isArray(e.value) && e.value.length === ((n = e.options) == null ? void 0 : n.length);
     };
     return k(() => {
       u();
@@ -38,7 +39,7 @@ const S = { style: { "padding-left": "11px" } }, D = /* @__PURE__ */ c({
         u();
       },
       { deep: !0 }
-    ), (n, a) => (_(), x(o(V), y(n.$attrs, {
+    ), (t, n) => (_(), x(o(V), y(t.$attrs, {
       mode: "multiple",
       onChange: l
     }), {
@@ -48,8 +49,8 @@ const S = { style: { "padding-left": "11px" } }, D = /* @__PURE__ */ c({
         U("div", S, [
           s(o(B), {
             indeterminate: o(d),
-            checked: o(t),
-            "onUpdate:checked": a[0] || (a[0] = (g) => N(t) ? t.value = g : null),
+            checked: o(a),
+            "onUpdate:checked": n[0] || (n[0] = (g) => N(a) ? a.value = g : null),
             onChange: m
           }, null, 8, ["indeterminate", "checked"]),
           w(" 全选")

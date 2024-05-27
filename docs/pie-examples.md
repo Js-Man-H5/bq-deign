@@ -1,7 +1,7 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-05-14 15:30:17
- * @LastEditTime: 2024-05-23 19:16:31
+ * @LastEditTime: 2024-05-27 16:51:04
  * @Description: 
 -->
 # 3D 饼图
@@ -84,12 +84,17 @@ const imgSrc = "https://tqa.oss-cn-shanghai.aliyuncs.com/val/024af179-9e6d-4ce1-
 
 ## API
 
-| 成员      | 说明 | 类型 | 
-| ----------- | ----------- |--------------|
-| data      | 需要展示的数据   |``` Array<data: {label: string;value: number;}> ``` | 
-| colorList   | 饼图颜色      |``` string[] ```|
-| innerRadius   | 内环半径      |``` number ```|
-| outerRadius   | 外环半径      |``` number ```|
-|depth | 饼图深度 |``` number ```|
-|centerTooltip | 中间提示 |``` boolean ```|
-|footer | 插槽 |``` - ```|
+| 成员      | 说明 | 类型 |  
+| ----------- | ----------- |-----------|
+| data      | 需要展示的数据   |``` Array<data: {label: string;value: number;}> ```| 
+| colorList   | 饼图颜色      |``` string[] ```|  | 
+| innerRadius   | 内环半径      |``` number ```|  | 
+| outerRadius   | 外环半径      |``` number ```|  | 
+|depth | 饼图深度 |``` number ```|  | 
+|centerTooltip | 中间提示 |``` boolean ```| | 
+
+## 插槽
+
+| 插槽名      | 说明 | 
+| ----------- | ----------- |
+| footer      | 自定义默认内容   |

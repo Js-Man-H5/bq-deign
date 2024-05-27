@@ -35,69 +35,70 @@ const te = { class: "three-pie-container" }, ne = { class: "three-pie-main" }, a
   },
   setup(G) {
     let M = 0;
-    const a = G;
+    const o = G;
     let g = ["#93DBFF", "#4B84F0", "#FFD982", "#00D7FF", "#49C384"];
     const c = S();
-    let f = null, h = null;
+    let u = null, i = null;
     const m = new l.Scene();
-    let p = null;
+    let v = null;
     const O = () => {
+      var t;
       if (c.value) {
-        const e = c.value?.clientWidth / c.value.clientHeight, n = Math.min(c.value.clientWidth, c.value.clientHeight) / 2;
-        p = new l.OrthographicCamera(-n * e, n * e, n, -n, 1, 1e3), p.position.set(0, 0, 686), p.lookAt(m.position), f && m.remove(f), f = W(), I(), m.add(f), h = new l.WebGLRenderer({ canvas: c.value, antialias: !0, alpha: !0 }), h.setSize(c.value.clientWidth, c.value.clientHeight), h.setClearColor(16777215, 0), h.setPixelRatio(2), h.render(m, p);
+        const e = ((t = c.value) == null ? void 0 : t.clientWidth) / c.value.clientHeight, a = Math.min(c.value.clientWidth, c.value.clientHeight) / 2;
+        v = new l.OrthographicCamera(-a * e, a * e, a, -a, 1, 1e3), v.position.set(0, 0, 686), v.lookAt(m.position), u && m.remove(u), u = W(), I(), m.add(u), i = new l.WebGLRenderer({ canvas: c.value, antialias: !0, alpha: !0 }), i.setSize(c.value.clientWidth, c.value.clientHeight), i.setClearColor(16777215, 0), i.setPixelRatio(2), i.render(m, v);
       }
     }, W = () => {
-      const e = new l.Group();
-      return i.value.forEach((t, n) => {
-        const r = g[n % g.length], o = a.colorList[n % a.colorList.length], v = x(t.startAngle, t.endAngle, r, "sector");
-        e.add(v);
-        const u = x(t.startAngle, t.endAngle, o, "bottomSector");
-        u.renderOrder = 999, e.add(u);
-        const d = H(t.startAngle, t.endAngle);
-        e.add(d);
-      }), e;
+      const t = new l.Group();
+      return d.value.forEach((e, n) => {
+        const a = g[n % g.length], r = o.colorList[n % o.colorList.length], f = x(e.startAngle, e.endAngle, a, "sector");
+        t.add(f);
+        const h = x(e.startAngle, e.endAngle, r, "bottomSector");
+        h.renderOrder = 999, t.add(h);
+        const p = H(e.startAngle, e.endAngle);
+        t.add(p);
+      }), t;
     }, P = X(() => ({
       curveSegments: 40,
       //曲线分段数，数值越高曲线越平滑
-      depth: a.depth,
+      depth: o.depth,
       bevelEnabled: !1,
       bevelSegments: 9,
       steps: 2,
       bevelSize: 0,
       bevelThickness: 0
-    })), _ = (e, t, n, r) => {
-      const o = new l.Shape();
-      return o.moveTo(a.outRadius, 0), o.absarc(0, 0, n, e, t, !0), o.absarc(0, 0, r, t, e, !1), o;
-    }, x = (e, t, n, r) => {
-      const o = _(e, t, a.innerRadius, a.outRadius), v = D(P.value);
-      let u = 0.9;
-      r === "bottomSector" && (u = 0.6, v.depth = 1);
-      const d = new l.ExtrudeGeometry(o, v), N = new l.MeshBasicMaterial({ color: n, opacity: u, transparent: !0, depthTest: !0 }), b = new l.Mesh(d, N);
+    })), _ = (t, e, n, a) => {
+      const r = new l.Shape();
+      return r.moveTo(o.outRadius, 0), r.absarc(0, 0, n, t, e, !0), r.absarc(0, 0, a, e, t, !1), r;
+    }, x = (t, e, n, a) => {
+      const r = _(t, e, o.innerRadius, o.outRadius), f = D(P.value);
+      let h = 0.9;
+      a === "bottomSector" && (h = 0.6, f.depth = 1);
+      const p = new l.ExtrudeGeometry(r, f), N = new l.MeshBasicMaterial({ color: n, opacity: h, transparent: !0, depthTest: !0 }), b = new l.Mesh(p, N);
       return b.position.set(0, 0, 0), b.renderOrder = 2, b.rotateX(-(k / 180) * Math.PI), b;
-    }, H = (e, t) => {
-      const n = _(e, t, a.innerRadius + 1, a.outRadius - 1), r = D(P.value), o = new l.ExtrudeGeometry(n, r), v = new l.EdgesGeometry(o, 10), u = new l.MeshStandardMaterial({
+    }, H = (t, e) => {
+      const n = _(t, e, o.innerRadius + 1, o.outRadius - 1), a = D(P.value), r = new l.ExtrudeGeometry(n, a), f = new l.EdgesGeometry(r, 10), h = new l.MeshStandardMaterial({
         fog: !1,
         color: 16777215,
         emissive: 16777215,
         transparent: !0,
         opacity: 0.5,
         roughness: 0
-      }), d = new l.LineSegments(v, u);
-      return d.rotateX(-(k / 180) * Math.PI), d.renderOrder = 4, d;
+      }), p = new l.LineSegments(f, h);
+      return p.rotateX(-(k / 180) * Math.PI), p.renderOrder = 4, p;
     }, q = function() {
-      let e = !1;
-      return a.data.length !== a.colorList.length && (console.warn("颜色和数据长度不匹配"), e = !0), e;
-    }(), z = 0.3 * Math.PI * 2, s = S(0), i = S([]);
+      let t = !1;
+      return o.data.length !== o.colorList.length && (console.warn("颜色和数据长度不匹配"), t = !0), t;
+    }(), z = 0.3 * Math.PI * 2, s = S(0), d = S([]);
     let C = 0;
     U(() => {
       if (q)
         return !1;
-      if (g = a.colorList || g, i.value = D(a.data) || [], i.value.length === 0)
+      if (g = o.colorList || g, d.value = D(o.data) || [], d.value.length === 0)
         return;
-      C = i.value.reduce((t, n) => typeof n.value == "number" ? t + n.value : t, 0);
-      let e = z;
-      i.value.forEach((t) => {
-        t.startAngle = e, t.endAngle = t.startAngle - t.value / C * Math.PI * 2, e = t.endAngle;
+      C = d.value.reduce((e, n) => typeof n.value == "number" ? e + n.value : e, 0);
+      let t = z;
+      d.value.forEach((e) => {
+        e.startAngle = t, e.endAngle = e.startAngle - e.value / C * Math.PI * 2, t = e.endAngle;
       }), J(() => {
         O(), w();
       });
@@ -105,44 +106,44 @@ const te = { class: "three-pie-container" }, ne = { class: "three-pie-main" }, a
     const R = S(0);
     let A = 0;
     const w = () => {
-      const e = i.value.length;
+      const t = d.value.length;
       if ((s.value % 1 > 0.99 || s.value % 1 < 0.01) && A < 1) {
-        R.value = Math.round(s.value) >= e ? 0 : Math.round(s.value), A += 0.01, L && (M = requestAnimationFrame(w));
+        R.value = Math.round(s.value) >= t ? 0 : Math.round(s.value), A += 0.01, L && (M = requestAnimationFrame(w));
         return;
       }
-      A = 0, s.value += 0.01, s.value > e && (s.value = 0), I(), p && h?.render(m, p), L && (M = requestAnimationFrame(w));
+      A = 0, s.value += 0.01, s.value > t && (s.value = 0), I(), v && (i == null || i.render(m, v)), L && (M = requestAnimationFrame(w));
     }, I = () => {
-      const e = i.value.length, t = (s.value + 1) * 10 % (e * 10) / 10;
-      f?.children.forEach((n, r) => {
-        if (Math.floor(s.value) === Math.ceil((r - 2) / 3)) {
-          const o = 1 - s.value % 1;
-          n.scale.set(1, 1, 1 + o);
+      const t = d.value.length, e = (s.value + 1) * 10 % (t * 10) / 10;
+      u == null || u.children.forEach((n, a) => {
+        if (Math.floor(s.value) === Math.ceil((a - 2) / 3)) {
+          const r = 1 - s.value % 1;
+          n.scale.set(1, 1, 1 + r);
         }
-        if (Math.floor(t) === Math.ceil((r - 2) / 3)) {
-          const o = s.value % 1;
-          n.scale.set(1, 1, 1 + o);
+        if (Math.floor(e) === Math.ceil((a - 2) / 3)) {
+          const r = s.value % 1;
+          n.scale.set(1, 1, 1 + r);
         }
       });
     };
     return Y(() => {
       cancelAnimationFrame(M);
-    }), (e, t) => (y(), E("div", te, [
+    }), (t, e) => (y(), E("div", te, [
       F("div", ne, [
         F("canvas", {
           ref_key: "pieRef",
           ref: c,
           class: "pie-canvas"
         }, null, 512),
-        a.centerTooltip ? (y(!0), E($, { key: 0 }, j(a.data, (n, r) => (y(), E("div", {
+        o.centerTooltip ? (y(!0), E($, { key: 0 }, j(o.data, (n, a) => (y(), E("div", {
           key: n.value,
           class: "pie-info",
-          style: K({ opacity: T(R) === r ? 1 : 0 })
+          style: K({ opacity: T(R) === a ? 1 : 0 })
         }, [
           F("div", ae, B(T(ee)(n.value)), 1),
           F("div", oe, B(n.label), 1)
         ], 4))), 128)) : Q("", !0)
       ]),
-      Z(e.$slots, "footer", {}, void 0, !0)
+      Z(t.$slots, "footer", {}, void 0, !0)
     ]));
   }
 });

@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2022-11-22 10:22:48
- * @LastEditTime: 2024-05-24 18:22:39
+ * @LastEditTime: 2024-05-27 19:32:31
  * @Description:
  */
 import { defineConfig } from "vite";
@@ -9,18 +9,14 @@ import vue from "@vitejs/plugin-vue";
 import { resolve } from "path";
 import { pluginsConfig, resolveConfig } from "./scripts/preview";
 import dts from "vite-plugin-dts";
-// import babelImport from "babel-plugin-import";
-// import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 export default defineConfig(() => {
     return {
         build: {
             outDir: "build",
-            target: "esnext",
             cssCodeSplit: true,
             rollupOptions: {
                 external: ["three", "@ant-design/icons-vue", "ant-design-vue", "unplugin-vue-components", "unplugin-auto-import", "vue"],
                 output: [
-                    // !flag && obj,
                     {
                         format: "es",
                         entryFileNames: "[name].js",

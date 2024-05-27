@@ -15,12 +15,12 @@ hero:
       link: /pie-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 🚀 支持多种引入方式
+    details: 支持多种引入方式
+  - title: 💡 快速、便捷、高效
+    details: 快速、便捷、高效
+  - title: 🛠️ 支持多元化配置
+    details: 支持多元化配置
 ---
 <home />
 
