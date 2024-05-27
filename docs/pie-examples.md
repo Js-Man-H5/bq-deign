@@ -1,7 +1,7 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-05-14 15:30:17
- * @LastEditTime: 2024-05-22 11:20:27
+ * @LastEditTime: 2024-05-23 19:16:31
  * @Description: 
 -->
 # 3D 饼图
@@ -47,7 +47,7 @@
 ```vue
 <template>
     <div class="slot-pie">
-        <BqPie v-bind="$attrs" v-on="$props">
+        <BqPie>
             <template v-slot:footer>
                 <div class="footer">
                     <img :src="imgSrc" />

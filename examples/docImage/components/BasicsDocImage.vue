@@ -1,7 +1,7 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-05-23 14:05:55
- * @LastEditTime: 2024-05-23 14:52:20
+ * @LastEditTime: 2024-05-24 19:05:39
  * @Description:
 -->
 <template>
@@ -20,8 +20,8 @@ import * as THREE from "three";
 let flagId = 0;
 const domRef = ref();
 onMounted(() => {
-    let w = domRef.value?.clientWidth;
-    let h = domRef.value?.clientHeight;
+    const w = domRef.value?.clientWidth;
+    const h = domRef.value?.clientHeight;
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, w / h, 0.001, 1000);
     camera.position.set(0, 0, 4);
@@ -320,8 +320,8 @@ void main() {
     render();
 
     function resize() {
-        w = window.innerWidth;
-        h = window.innerHeight;
+        const w = domRef.value?.clientWidth;
+        const h = domRef.value?.clientHeight;
         renderer.setSize(w, h);
         camera.aspect = w / h;
         camera.updateProjectionMatrix();

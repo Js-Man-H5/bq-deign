@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2024-05-14 15:30:17
- * @LastEditTime: 2024-05-23 15:14:27
+ * @LastEditTime: 2024-05-23 17:31:21
  * @Description:
  */
 import { defineConfig } from "vitepress";
@@ -37,6 +37,6 @@ export default defineConfig({
             },
         ],
 
-        socialLinks: [{ icon: "github", link: "" }],
+        socialLinks: [{ icon: "github", link: "http://git.ibaiqiu.com/jack.hai/bq-design" }],
     },
 });

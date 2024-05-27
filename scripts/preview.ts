@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2024-05-16 11:44:01
- * @LastEditTime: 2024-05-16 13:48:27
+ * @LastEditTime: 2024-05-24 09:37:15
  * @Description:
  */
 import AutoImport from "unplugin-auto-import/vite";
@@ -42,7 +42,10 @@ const resolveConfig = {
             find: "@examples",
             replacement: resolve(__dirname, "../examples"),
         },
-
+        {
+            find: "@theme-chalk",
+            replacement: resolve(__dirname, "../packages/theme-chalk"),
+        },
         {
             find: "public",
             replacement: resolve(__dirname, "../public"),

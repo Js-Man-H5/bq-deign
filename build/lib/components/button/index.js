@@ -1,0 +1,1 @@
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const e=require("./Button.vue.js"),o=require("../../utils/tool.js"),t=o.withInstall(e.default);exports.BqButton=t;exports.default=t;

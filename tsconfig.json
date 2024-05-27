@@ -22,6 +22,9 @@
             ],
             "@examples/*": [
                 "examples/*"
+            ],
+            "@theme-chalk/*": [
+                "packages/theme-chalk/*"
             ]
         },
         "types": [
