@@ -1,1 +1,0 @@
-"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const t=require("./Pie.vue.js"),i=require("../../utils/tool.js"),e=i.withInstall(t.default);exports.BqPie=e;exports.default=e;
