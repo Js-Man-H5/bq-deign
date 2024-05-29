@@ -23,7 +23,13 @@ const oldNum = ref(["0"]);
 const maxHeight = ref("20px");
 // 获取该div得到最大宽度，保证数字滚动统一
 // 父组件传入需要滑动的数据，监听数据变化，变更样式
-const props = withDefaults(defineProps<PropsType>(), { value: 0, math: "ceil", textMaxWidth: "9.6px" });
+const props = withDefaults(defineProps<PropsType>(), {
+    effect: "ease-in-out",
+    value: 0,
+    duration: 1,
+    math: "ceil",
+    textMaxWidth: "9.6px",
+});
 watch(
     () => props.value,
     (end, start) => {
@@ -73,9 +79,10 @@ const changeNum = (num: number) => {
         oldNum.value.splice(0, Math.abs(diff));
     }
     // 加载滑动动画前，先重置translateY的值
+    console.log(props, "props.transition");
     numDiv.value.forEach((div: HTMLDivElement) => {
         div.style.transform = "translateY(0)";
-        div.style.transition = "transform 0s ease-in-out";
+        div.style.transition = `transform 0s ${props.effect}`;
     });
 
     nextTick(() => {
@@ -141,7 +148,7 @@ const getTransFormStyle = (start: string, end: string) => {
         const translateY = ((length - 1) / length) * 100;
         return {
             transform: `translateY(-${translateY}%)`,
-            transition: "transform 1s ease-in-out",
+            transition: `transform ${props.duration}s ${props.effect}`,
         };
     }
 };
@@ -150,8 +157,6 @@ onMounted(() => {
     changeNum(props.value);
     if (numDiv.value.length > 0) {
         const style = window.getComputedStyle(numDiv.value[0]);
-        // console.log(window.getComputedStyle(hiddenDiv.value[0]).width);
-
         maxHeight.value = style.height;
     }
 });

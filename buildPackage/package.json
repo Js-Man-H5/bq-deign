@@ -1,6 +1,6 @@
 {
     "name": "bq-design",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "百秋组件库",
     "main": "./lib/index.js",
     "module": "./es/index.js",
