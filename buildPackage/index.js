@@ -1,19 +1,23 @@
 /*
  * @Author: jack.hai
  * @Date: 2024-05-21 18:56:40
- * @LastEditTime: 2024-05-24 11:27:26
+ * @LastEditTime: 2024-06-06 11:48:27
  * @Description:
  */
-const fs = import("fs");
-const path = import("path");
+const fs = require("fs");
+const path = require("path");
+const pkg = require("./package.json");
 const copyFile = async () => {
-    const data = await fs;
-    const filePath = await path;
-    const getFilePath = data.default.readdirSync(filePath.resolve(__dirname));
+    const getFilePath = fs.readdirSync(path.resolve(__dirname));
     getFilePath.forEach((item) => {
         if (item !== "index.js") {
-            data.copyFileSync(filePath.resolve(__dirname, item), filePath.resolve(__dirname, "../build", item));
+            fs.copyFileSync(path.resolve(__dirname, item), path.resolve(__dirname, "../build", item));
         }
+    });
+    fs.readFile(path.resolve(__dirname, "../typings/components.d.ts"), "utf8", (err, data) => {
+        if (err) throw err;
+        const modifiedData = data.replace(/..\/packages\/index/g, pkg.name);
+        fs.writeFile(path.resolve(__dirname, "../build", "global.d.ts"), modifiedData, "utf8", (err) => {});
     });
 };
 copyFile();

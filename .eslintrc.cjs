@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2022-11-23 14:35:45
- * @LastEditTime: 2024-04-22 17:37:46
+ * @LastEditTime: 2024-06-06 11:48:39
  * @Description:
  */
 
@@ -13,6 +13,7 @@ module.exports = {
         "vue/setup-compiler-macros": true,
     },
     parser: "vue-eslint-parser",
+    exclude:['./buildPackage'],
     extends: [
         "eslint:recommended",
         "plugin:vue/vue3-essential",
