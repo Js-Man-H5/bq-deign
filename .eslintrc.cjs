@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2022-11-23 14:35:45
- * @LastEditTime: 2024-04-22 17:37:46
+ * @LastEditTime: 2024-06-06 11:30:11
  * @Description:
  */
 
@@ -19,7 +19,7 @@ module.exports = {
         "plugin:@typescript-eslint/recommended",
         "plugin:prettier/recommended",
         "./.eslintrc-auto-import.json"],
-
+    exclude:['./buildPackage'],
     overrides: [],
     parserOptions: {
         ecmaVersion: "latest",

@@ -25,6 +25,10 @@
         "ScaleBox",
         "vue3"
     ],
+    "vetur": {
+        "tags": "tags.json",
+        "attributes": "attributes.json"
+    },
     "author": "jack.hai",
     "license": "ISC"
 }

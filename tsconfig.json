@@ -54,7 +54,7 @@
     ],
     "exclude": [
         "node_modules",
-        "dist",
+        "build/global.d.ts",
         "vite.config.ts"
     ],
     "references": [

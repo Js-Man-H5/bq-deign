@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2022-11-22 10:22:48
- * @LastEditTime: 2024-05-27 19:32:31
+ * @LastEditTime: 2024-06-06 15:13:22
  * @Description:
  */
 import { defineConfig } from "vite";

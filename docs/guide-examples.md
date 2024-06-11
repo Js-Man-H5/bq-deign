@@ -1,7 +1,7 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-05-23 09:02:13
- * @LastEditTime: 2024-05-27 15:47:14
+ * @LastEditTime: 2024-06-04 18:22:00
  * @Description: 
 -->
 # 操作指南
@@ -63,8 +63,8 @@ const BqDesignResolver = () => {
                 return {
                     importName: name,
                     from: "bq-design",
-                    path: `bq-design/lib/components/${pathName}/index.js`,
-                    sideEffects: `bq-design/lib/components/${pathName}/${name.slice(2)}.css`,
+                    path: `bq-design/es/components/${pathName}/index.js`,
+                    sideEffects: `bq-design/es/components/${pathName}/${name.slice(2)}.css`,
                 };
             }
         },

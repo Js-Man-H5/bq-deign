@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "start": "vite --host --mode development",
-        "build": "vue-tsc --noEmit && vite build --mode developmentBuild  && node buildPackage/index.js ",
+        "build": "vue-tsc --noEmit && vite build --mode developmentBuild && node buildPackage/vetur.js  &&  node buildPackage/index.js ",
         "preview": "vite preview",
         "lint": "eslint . --ext .vue,.ts,.js,.jsx,.mjs --fix --ignore-path .gitignore",
         "prettier": "prettier --write .",
@@ -74,6 +74,7 @@
         "vite-plugin-eslint": "^1.8.1",
         "vite-plugin-progress": "^0.0.7",
         "vitepress": "^1.1.4",
+        "vue-docgen-api": "^4.78.0",
         "vue-tsc": "2.0.14"
     }
 }
