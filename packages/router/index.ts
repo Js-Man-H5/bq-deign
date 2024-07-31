@@ -46,6 +46,14 @@ const routes: RouteRecordRaw[] = [
         },
         component: () => import(/* webpackChunkName: "numberAnimate" */ "@/components/numberAnimate/test.vue"),
     },
+    {
+        path: "/scrollBar",
+        name: "scrollBar",
+        meta: {
+            title: "scrollBar",
+        },
+        component: () => import(/* webpackChunkName: "scrollBar" */ "@/components/scrollBar/demo/demo.vue"),
+    },
 ];
 const router = createRouter({
     // import.meta.env.VITE_APP_BASE_URL.slice(0, -1)

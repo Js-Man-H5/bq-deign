@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2024-05-14 15:34:42
- * @LastEditTime: 2024-05-23 15:05:06
+ * @LastEditTime: 2024-07-31 11:17:14
  * @Description:
  */
 import type { App } from "vue";
@@ -66,3 +66,13 @@ export const deepClone = (obj: any, cache: any = []) => {
 };
 
 export const isWindow = typeof window !== "undefined";
+
+export function debounced<T extends (...args: any[]) => void>(func: T, wait: number): (...args: Parameters<T>) => void {
+    let timeout: ReturnType<typeof setTimeout>;
+    return function (...args: Parameters<T>) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+            func(...args);
+        }, wait);
+    };
+}

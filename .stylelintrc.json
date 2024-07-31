@@ -4,6 +4,12 @@
     "rules": {
         "prettier/prettier": true,
         "no-invalid-position-at-import-rule": null,
+        "selector-class-pattern": [
+            "^[a-z]+(-[a-z]+)*(_[a-z]+)?$",
+            {
+                "message": "Expected class selector to be kebab-case"
+            }
+        ],
         "color-function-notation": "legacy",
         "no-descending-specificity": null,
         "function-url-quotes": "always",
