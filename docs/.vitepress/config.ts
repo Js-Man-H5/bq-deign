@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2024-05-14 15:30:17
- * @LastEditTime: 2024-05-23 17:31:21
+ * @LastEditTime: 2024-07-31 17:29:42
  * @Description:
  */
 import { defineConfig } from "vitepress";
@@ -32,6 +32,7 @@ export default defineConfig({
                     { text: "大屏适配", link: "/scale-box-examples" },
                     { text: "SelectAll", link: "/select-examples" },
                     { text: "数字翻牌器", link: "/number-animate-examples" },
+                    { text: "ScrollBar", link: "/scroll-bar-examples" },
                     // { text: "Runtime API Examples", link: "/api-examples" },
                 ],
             },

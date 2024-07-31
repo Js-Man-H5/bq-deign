@@ -9,8 +9,8 @@ dependencies:
     specifier: ^7.0.1
     version: 7.0.1(vue@3.4.23)
   ant-design-vue:
-    specifier: ^4.1.2
-    version: 4.2.1(vue@3.4.23)
+    specifier: ^4.2.3
+    version: 4.2.3(vue@3.4.23)
   axios:
     specifier: 1.6.8
     version: 1.6.8
@@ -1888,8 +1888,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /ant-design-vue@4.2.1(vue@3.4.23):
-    resolution: {integrity: sha512-3u6fmfCEJ5AFTsYhogP8lJ/vcqiAJO16o+gGQkWYRGLl0NxmY4hje4cPyv+pcxpeJgcG0vNEmkb1vVHKcnxd+g==}
+  /ant-design-vue@4.2.3(vue@3.4.23):
+    resolution: {integrity: sha512-kqGyWvZtFlSInFP93Ow6wS8LzEsxxUgpI+ZY5jQQkuX8WAcqdwXCA7IcHMpECW6JB89DZMo2Bw85jUg2SjlgQA==}
     engines: {node: '>=12.22.0'}
     peerDependencies:
       vue: '>=3.2.0'
