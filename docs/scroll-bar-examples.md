@@ -1,13 +1,11 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-07-31 17:28:21
- * @LastEditTime: 2024-07-31 19:16:47
+ * @LastEditTime: 2024-08-01 15:17:53
  * @Description:
 -->
 
 # 自定义滚动条
-
-<!-- :autoHide="{ x: true, y: false }" :barMinSize="16" -->
 
 ## 基础示例
 
@@ -43,7 +41,7 @@ Scrollbar组件<父元素>必须设置宽高
 
 ## 支持与其他组件库配合一键回到顶部
 
-<BqBasicsScrollBar :backTop="true"   />
+<!-- <BqBasicsScrollBar :backTop="true"   /> -->
 
 ```vue{[14,23,3]}
 <template>

@@ -11,27 +11,14 @@
         "isolatedModules": true,
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": false,
-        "lib": [
-            "ESNext",
-            "DOM"
-        ],
+        "lib": ["ESNext", "DOM"],
         "baseUrl": ".",
         "paths": {
-            "@/*": [
-                "packages/*"
-            ],
-            "@examples/*": [
-                "examples/*"
-            ],
-            "@theme-chalk/*": [
-                "packages/theme-chalk/*"
-            ]
+            "@/*": ["packages/*"],
+            "@examples/*": ["examples/*"],
+            "@theme-chalk/*": ["packages/theme-chalk/*"]
         },
-        "types": [
-            "vite/client",
-            "node",
-            "vue"
-        ],
+        "types": ["vite/client", "vue"],
         "skipLibCheck": true,
         "noImplicitAny": true,
         "noImplicitThis": true,
@@ -50,13 +37,9 @@
         "examples/**/*.ts",
         "docs/.vitepress/theme/*.ts",
         "docs/**/*.d.ts",
-        "docs/**/*.ts",
+        "docs/**/*.ts"
     ],
-    "exclude": [
-        "node_modules",
-        "build/global.d.ts",
-        "vite.config.ts"
-    ],
+    "exclude": ["node_modules", "build/global.d.ts", "vite.config.ts"],
     "references": [
         {
             "path": "./tsconfig.node.json"

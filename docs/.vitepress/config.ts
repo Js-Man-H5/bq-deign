@@ -1,13 +1,12 @@
 /*
  * @Author: jack.hai
  * @Date: 2024-05-14 15:30:17
- * @LastEditTime: 2024-07-31 17:29:42
+ * @LastEditTime: 2024-08-01 15:58:17
  * @Description:
  */
 import { defineConfig } from "vitepress";
 import { resolveConfig, pluginsConfig } from "../../scripts/preview.ts";
 // https://vitepress.dev/reference/site-config
-
 export default defineConfig({
     title: "BQ-Design",
     description: "组件库",

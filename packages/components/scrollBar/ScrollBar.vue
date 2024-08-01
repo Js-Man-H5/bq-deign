@@ -1,7 +1,7 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-07-30 11:49:23
- * @LastEditTime: 2024-07-31 18:50:19
+ * @LastEditTime: 2024-08-01 15:48:31
  * @Description:
 -->
 <template>
@@ -19,7 +19,6 @@
 <script setup lang="ts">
 import type { ScrollBarProps } from "./type";
 import { debounced } from "@/utils/tool.js";
-import { getScrollBarWidth } from "./generateBar";
 import Bar from "./Bar.vue";
 import { DIRECTION_ENUM } from "./type";
 defineOptions({
@@ -161,9 +160,12 @@ const initOpacity = () => {
     opacityX.value = getAutoHide("x") ? 1 : 0;
 };
 
-const resizeObserver = new ResizeObserver((entries) => {
-    debouncedFunction();
-});
+const resizeObserver = !import.meta.env.SSR
+    ? new ResizeObserver((entries) => {
+          debouncedFunction();
+      })
+    : { observe: () => {}, unobserve: () => {} };
+
 /**
  * @description: 防抖函数
  * @param {*} debounced
@@ -222,12 +224,15 @@ defineExpose({
     view: shallowRef(domRef),
 });
 
-onMounted(() => {
-    initOpacity();
-    barWidth.value = getScrollBarWidth;
-    viewBarRef.value && resizeObserver.observe(viewBarRef.value);
-    window.addEventListener("resize", initSize);
-    initSize();
+onMounted(async () => {
+    if (!import.meta.env.SSR) {
+        initOpacity();
+        let res = await import("./generateBar");
+        barWidth.value = res.getScrollBarWidth;
+        viewBarRef.value && resizeObserver.observe(viewBarRef.value);
+        window.addEventListener("resize", initSize);
+        initSize();
+    }
 });
 
 onUnmounted(() => {

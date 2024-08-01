@@ -1,13 +1,14 @@
 /*
  * @Author: jack.hai
  * @Date: 2024-05-16 11:44:01
- * @LastEditTime: 2024-05-24 09:37:15
+ * @LastEditTime: 2024-08-01 15:58:36
  * @Description:
  */
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import progress from "vite-plugin-progress";
 import { resolve } from "path";
+
 const pluginsConfig = [
     progress({ srcDir: "packages" }),
     AutoImport({
@@ -27,6 +28,7 @@ const pluginsConfig = [
             globalsPropValue: true,
         },
     }),
+
     Components({
         dts: "../packages/components.d.ts",
         dirs: ["../packages/components"],
