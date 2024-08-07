@@ -1,7 +1,7 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-07-30 11:49:23
- * @LastEditTime: 2024-08-01 15:48:31
+ * @LastEditTime: 2024-08-07 16:06:26
  * @Description:
 -->
 <template>
@@ -27,7 +27,7 @@ defineOptions({
 const props = withDefaults(defineProps<ScrollBarProps>(), {
     thumbWrapperSize: 6,
     autoHide: true,
-    barMinSize: 8,
+    barMinSize: 16,
 });
 const { thumbWrapperSize, autoHide, barMinSize } = toRefs(props);
 // emotion
@@ -58,7 +58,7 @@ const handleScroll = (event: Event) => {
     if (domRef.value && event.target) {
         let target = event.target as HTMLDivElement;
         let scaleY = ((domRef.value?.clientHeight - barMinSize.value + thumbWrapperSize.value) / target.scrollHeight).toFixed(4);
-        let scaleX = (domRef.value?.clientWidth / target.scrollWidth).toFixed(3);
+        let scaleX = (domRef.value?.clientWidth / target.scrollWidth).toFixed(4);
         let x = Number((target["scrollTop"] * Number(scaleY)).toFixed(3));
         let y = Number((target["scrollLeft"] * Number(scaleX)).toFixed(3));
         Object.assign(scale, { x: Number(scaleX), y: Number(scaleY) });
@@ -134,6 +134,8 @@ const getScrollbarScale = () => {
             width: width < barMinSize.value ? barMinSize.value : width,
             height: height < barMinSize.value ? barMinSize.value : height,
         });
+        opacityX.value = thumb?.clientWidth === thumb?.scrollWidth ? 0 : getAutoHide("x") ? 1 : 0;
+        opacityY.value = thumb?.clientHeight === thumb?.scrollHeight ? 0 : getAutoHide("y") ? 1 : 0;
     }
     if (thumb && viewBarRef.value) {
         Object.assign(showCoord, { x: viewBarRef.value?.scrollWidth > thumb?.clientWidth, y: viewBarRef.value?.scrollHeight > thumb?.clientHeight });
@@ -149,15 +151,6 @@ const initSize = () => {
         });
     }
     debouncedFunction();
-};
-
-/**
- * @description: 初始化opacity
- * @return {*}
- */
-const initOpacity = () => {
-    opacityY.value = getAutoHide("y") ? 1 : 0;
-    opacityX.value = getAutoHide("x") ? 1 : 0;
 };
 
 const resizeObserver = !import.meta.env.SSR
@@ -226,7 +219,6 @@ defineExpose({
 
 onMounted(async () => {
     if (!import.meta.env.SSR) {
-        initOpacity();
         let res = await import("./generateBar");
         barWidth.value = res.getScrollBarWidth;
         viewBarRef.value && resizeObserver.observe(viewBarRef.value);
@@ -240,15 +232,6 @@ onUnmounted(() => {
     viewBarRef.value && resizeObserver.unobserve(viewBarRef.value);
 });
 
-watch(
-    () => props.autoHide,
-    () => {
-        initOpacity();
-    },
-    {
-        deep: true,
-    },
-);
 watch(
     () => move.x,
     () => {
