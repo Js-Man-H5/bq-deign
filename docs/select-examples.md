@@ -1,26 +1,28 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-05-20 09:34:29
- * @LastEditTime: 2024-05-23 10:11:19
- * @Description: 
+ * @LastEditTime: 2024-08-27 19:08:40
+ * @Description:
 -->
+
 # Antd Select 全选
+
 ::: tip
-该功能是基于ant-design-vue ```Select```组件 的二次封装
+该功能是基于ant-design-vue `Select`组件 的二次封装
 
 使用该组件需要提前安装ant-design-vue、当前所用版本4.1.2
 :::
-
 
 ## 基础示例
 
 <BqBasicsSelectAll/>
 
 **代码示例**
+
 ```vue
 <template>
     <div>
-        <SelectAll style="width: 250px" v-model:value="value" :options="options"></SelectAll>
+        <BqSelectAll style="width: 250px" v-model:value="value" :options="options"></BqSelectAll>
     </div>
 </template>
 

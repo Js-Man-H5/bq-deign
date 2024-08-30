@@ -1,7 +1,7 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-07-30 11:49:23
- * @LastEditTime: 2024-08-07 16:06:26
+ * @LastEditTime: 2024-08-27 18:08:16
  * @Description:
 -->
 <template>
@@ -57,10 +57,10 @@ const handleScroll = (event: Event) => {
     emit("scroll", event);
     if (domRef.value && event.target) {
         let target = event.target as HTMLDivElement;
-        let scaleY = ((domRef.value?.clientHeight - barMinSize.value + thumbWrapperSize.value) / target.scrollHeight).toFixed(4);
-        let scaleX = (domRef.value?.clientWidth / target.scrollWidth).toFixed(4);
-        let x = Number((target["scrollTop"] * Number(scaleY)).toFixed(3));
-        let y = Number((target["scrollLeft"] * Number(scaleX)).toFixed(3));
+        let scaleY = ((target.scrollHeight - domRef.value!.clientHeight) / (domRef.value!.clientHeight - size.height)).toFixed(2);
+        let scaleX = ((target.scrollWidth - domRef.value!.clientWidth) / (domRef.value!.clientWidth - size.width)).toFixed(2);
+        let x = Number((target["scrollTop"] / Number(scaleY)).toFixed(2));
+        let y = Number((target["scrollLeft"] / Number(scaleX)).toFixed(2));
         Object.assign(scale, { x: Number(scaleX), y: Number(scaleY) });
         Object.assign(move, { y: x <= 0 ? 0 : x, x: y <= 0 ? 0 : y });
     }
@@ -94,7 +94,7 @@ const handleMousemove = (event: globalThis.MouseEvent) => {
     if (directionValue.value === DIRECTION_ENUM.VERTICAL) {
         if (wrapperRef.value && rightBarRef.value) {
             let wrapperDom = wrapperRef.value.getBoundingClientRect();
-            let value = (event.clientY - wrapperDom.top - startMove.value) / scale.y;
+            let value = (event.clientY - wrapperDom.top - startMove.value) * scale.y;
             if (domRef.value) {
                 domRef.value.scrollTop = value <= 0 ? 0 : value;
             }
@@ -102,7 +102,7 @@ const handleMousemove = (event: globalThis.MouseEvent) => {
     } else {
         if (wrapperRef.value && bottomBarRef.value) {
             let wrapperDom = wrapperRef.value.getBoundingClientRect();
-            let value = (event.clientX - wrapperDom.left - startMove.value) / scale.x;
+            let value = (event.clientX - wrapperDom.left - startMove.value) * scale.x;
             if (domRef.value) {
                 domRef.value.scrollLeft = value <= 0 ? 0 : value;
             }
@@ -124,8 +124,8 @@ const getScrollbarScale = () => {
     if (thumb && wrapperRef.value) {
         let width = thumb?.clientWidth * (thumb?.clientWidth / thumb?.scrollWidth);
         let height = thumb?.clientHeight * (thumb?.clientHeight / thumb?.scrollHeight);
-        let scaleY = (wrapperRef.value?.clientHeight / thumb.scrollHeight).toFixed(3);
-        let scaleX = (wrapperRef.value?.clientWidth / thumb.scrollWidth).toFixed(3);
+        let scaleY = ((thumb.scrollHeight - thumb!.clientHeight) / (thumb!.clientHeight - size.height)).toFixed(2);
+        let scaleX = ((thumb.scrollWidth - thumb!.clientWidth) / (thumb!.clientWidth - size.width)).toFixed(2);
         Object.assign(scale, {
             x: Number(scaleX),
             y: Number(scaleY),

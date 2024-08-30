@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2024-05-14 15:30:17
- * @LastEditTime: 2024-08-01 15:58:17
+ * @LastEditTime: 2024-08-27 14:49:57
  * @Description:
  */
 import { defineConfig } from "vitepress";
@@ -11,6 +11,9 @@ export default defineConfig({
     title: "BQ-Design",
     description: "组件库",
     vite: {
+        server: {
+            port: 5175,
+        },
         resolve: resolveConfig,
         plugins: pluginsConfig,
     },
@@ -32,6 +35,7 @@ export default defineConfig({
                     { text: "SelectAll", link: "/select-examples" },
                     { text: "数字翻牌器", link: "/number-animate-examples" },
                     { text: "ScrollBar", link: "/scroll-bar-examples" },
+                    { text: "可视组件", link: "/view-examples" },
                     // { text: "Runtime API Examples", link: "/api-examples" },
                 ],
             },

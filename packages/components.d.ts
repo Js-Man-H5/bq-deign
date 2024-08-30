@@ -18,5 +18,6 @@ declare module 'vue' {
     ScrollBar: typeof import('./components/scrollBar/ScrollBar.vue')['default']
     SelectAll: typeof import('./components/selectAll/SelectAll.vue')['default']
     Test: typeof import('./components/numberAnimate/test.vue')['default']
+    VisibleComponent: typeof import('./components/visibleComponent/VisibleComponent.vue')['default']
   }
 }

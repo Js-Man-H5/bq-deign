@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2022-11-23 13:43:29
- * @LastEditTime: 2024-05-23 14:10:19
+ * @LastEditTime: 2024-08-27 10:51:22
  * @Description:
  */
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
@@ -53,6 +53,14 @@ const routes: RouteRecordRaw[] = [
             title: "scrollBar",
         },
         component: () => import(/* webpackChunkName: "scrollBar" */ "@/components/scrollBar/demo/demo.vue"),
+    },
+    {
+        path: "/visibleComponent",
+        name: "visibleComponent",
+        meta: {
+            title: "visibleComponent",
+        },
+        component: () => import(/* webpackChunkName: "visibleComponent" */ "@/components/visibleComponent/demo/demo.vue"),
     },
 ];
 const router = createRouter({

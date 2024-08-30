@@ -1,7 +1,7 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-05-23 14:05:55
- * @LastEditTime: 2024-05-24 19:05:39
+ * @LastEditTime: 2024-08-27 14:27:47
  * @Description:
 -->
 <template>
@@ -13,7 +13,7 @@
 
 <script setup>
 defineOptions({
-    name: "BqDocImage",
+    name: "BqBasicsDocsImage",
 });
 
 import * as THREE from "three";

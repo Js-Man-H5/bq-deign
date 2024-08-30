@@ -1,7 +1,7 @@
 <!--
  * @Author: jack.hai
  * @Date: 2022-11-22 10:22:48
- * @LastEditTime: 2024-05-23 16:53:16
+ * @LastEditTime: 2024-08-27 11:40:40
  * @Description:
 -->
 
@@ -83,11 +83,19 @@ pnpm start
 12. build/xxx 打包分支
 13. perf/xxx 性能分支
 
-
 ## 推送代码
 
-- 切换到dist目录
-- 切换为 npm 镜像源
-- 修改package版本
-- npm adduser
-- npm publish
+-   切换到dist目录
+-   切换为 npm 镜像源
+-   修改package版本
+-   npm adduser
+-   npm publish
+
+## 组件开发流程
+
+-   在`bq-design/packages/components/`下建立组件，若在页面展示组件，在该路径创建页面`bq-design/packages/components/xxx/demo/demo.vue`
+-   组件开发完成，在 `bq-design/packages/components/index` 路径下添加相关组件、同时需要在`bq-design/typings/components.d` 中新增类型，确保组件打包后可以正常识别类型
+
+## 注意
+
+打包时候如遇到`windows is undefined` 则添加判断 `if (!import.meta.env.SSR)`

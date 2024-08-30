@@ -1,14 +1,25 @@
 /*
  * @Author: jack.hai
  * @Date: 2024-05-16 14:46:40
- * @LastEditTime: 2024-07-31 17:32:03
+ * @LastEditTime: 2024-08-30 09:49:53
  * @Description:
  */
-import { BqBasicsButton } from "./button";
-import { BqBasicsPie, BqSlotPie } from "./pie";
-import { BqBasicsScaleBox } from "./scaleBox";
-import { BqBasicsSelectAll, BqAntdSelectAll } from "./selectAll";
-import { BqBasicsNumberAnimate } from "./numberAnimate";
-import { BqBasicsDocsImage } from "./docImage";
-import { BqBasicsScrollBar } from "./scrollBar";
-export { BqBasicsButton, BqBasicsScrollBar, BqBasicsPie, BqBasicsScaleBox, BqBasicsSelectAll, BqAntdSelectAll, BqBasicsNumberAnimate, BqBasicsDocsImage, BqSlotPie };
+import type { DefineComponent, Plugin } from "vue";
+const modules = import.meta.glob("./*/index.ts");
+
+let components: { [k: string]: DefineComponent<{}, {}, any> & Plugin } = {};
+
+const loadComponents = async () => {
+    for (let i in modules) {
+        let data = (await modules[i]()) as { [key: string]: DefineComponent<{}, {}, any> & Plugin };
+        for (let k in data) {
+            let name = data[k].name;
+            if (name) {
+                components[name] = data[k];
+            }
+        }
+    }
+    return components;
+};
+
+export default loadComponents();

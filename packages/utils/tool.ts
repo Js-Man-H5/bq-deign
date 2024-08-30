@@ -1,18 +1,18 @@
 /*
  * @Author: jack.hai
  * @Date: 2024-05-14 15:34:42
- * @LastEditTime: 2024-07-31 11:17:14
+ * @LastEditTime: 2024-08-27 14:42:58
  * @Description:
  */
-import type { App } from "vue";
+import type { App, DefineComponent, Plugin } from "vue";
 
-export const withInstall = <T extends Component>(comp: T) => {
+export const withInstall = <T extends DefineComponent<{}, {}, any>>(comp: T): T & Plugin => {
     (comp as Record<string, unknown>).install = (app: App) => {
         const compName = comp.name;
         if (!compName) return;
         app.component(compName, comp);
     };
-    return comp;
+    return comp as T & Plugin;
 };
 
 /**

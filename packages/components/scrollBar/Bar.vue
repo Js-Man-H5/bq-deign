@@ -1,7 +1,7 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-07-31 09:09:15
- * @LastEditTime: 2024-07-31 17:08:20
+ * @LastEditTime: 2024-08-27 17:35:01
  * @Description:
 -->
 <template>
@@ -55,7 +55,7 @@ defineExpose({
     display: flex;
     justify-content: center;
     width: var(--size);
-    height: calc(100% - var(--size));
+    height: 100%;
     background-color: transparent;
     .scroll-bar {
         width: 100%;
