@@ -15,7 +15,7 @@
         "baseUrl": ".",
         "paths": {
             "@/*": ["packages/*"],
-            "@examples/*": ["examples/*"],
+            "@examples/*": ["packages/examples/*"],
             "@theme-chalk/*": ["packages/theme-chalk/*"]
         },
         "types": ["vite/client", "vue"],
@@ -32,9 +32,9 @@
         "packages/**/*.d.ts",
         "packages/**/*.ts",
         "packages/directives/domResize.ts",
-        "examples/**/*.vue",
-        "examples/**/*.d.ts",
-        "examples/**/*.ts",
+        "packages/examples/**/*.vue",
+        "packages/examples/**/*.d.ts",
+        "packages/examples/**/*.ts",
         "docs/.vitepress/theme/*.ts",
         "docs/**/*.d.ts",
         "docs/**/*.ts"

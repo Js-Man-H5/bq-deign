@@ -5,7 +5,7 @@
  * @Description:
  */
 import { App } from "vue";
-import * as bqComponents from "./components/index";
+import * as bqComponents from "./components";
 export const installer = (app: App) => {
     for (const i in bqComponents) {
         app.use(bqComponents[i as never]);

@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2024-05-16 11:44:01
- * @LastEditTime: 2024-08-01 15:58:36
+ * @LastEditTime: 2024-08-30 17:16:42
  * @Description:
  */
 import AutoImport from "unplugin-auto-import/vite";
@@ -20,18 +20,18 @@ const pluginsConfig = [
         ],
         // { "@/api/index": [["*", "api"]] }, { "@/store": [["default", "store"]] }
         imports: ["vue", "vue-router", "pinia"],
-        dirs: ["../packages/hooks"],
-        dts: "../packages/auto-imports.d.ts",
+        dirs: [resolve(__dirname, "../packages/hooks")],
+        dts: resolve(__dirname, "../packages/auto-imports.d.ts"),
         eslintrc: {
             enabled: false,
-            filepath: "./.eslintrc-auto-import.json",
+            filepath: resolve(__dirname, "../.eslintrc-auto-import.json"),
             globalsPropValue: true,
         },
     }),
 
     Components({
-        dts: "../packages/components.d.ts",
-        dirs: ["../packages/components"],
+        dts: resolve(__dirname, "../packages/components.d.ts"),
+        dirs: [resolve(__dirname, "../packages/components")],
     }),
 ];
 const resolveConfig = {
@@ -42,7 +42,7 @@ const resolveConfig = {
         },
         {
             find: "@examples",
-            replacement: resolve(__dirname, "../examples"),
+            replacement: resolve(__dirname, "../packages/examples"),
         },
         {
             find: "@theme-chalk",

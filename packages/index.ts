@@ -4,6 +4,6 @@
  * @LastEditTime: 2024-05-24 18:58:39
  * @Description:
  */
-export * from "./components/";
+export * from "./components";
 import { installer as install } from "./install";
 export default install;

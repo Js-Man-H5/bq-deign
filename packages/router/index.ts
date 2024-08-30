@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2022-11-23 13:43:29
- * @LastEditTime: 2024-08-27 10:51:22
+ * @LastEditTime: 2024-08-30 11:40:15
  * @Description:
  */
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
@@ -12,7 +12,7 @@ const routes: RouteRecordRaw[] = [
         meta: {
             title: "login",
         },
-        component: () => import(/* webpackChunkName: "button" */ "@/components/button/Button.vue"),
+        component: () => import(/* webpackChunkName: "button" */ "@/examples/button/components/BasicsButton.vue"),
     },
     {
         path: "/pie",
@@ -20,7 +20,7 @@ const routes: RouteRecordRaw[] = [
         meta: {
             title: "pie",
         },
-        component: () => import(/* webpackChunkName: "pie" */ "@/components/pie/Pie.vue"),
+        component: () => import(/* webpackChunkName: "pie" */ "@/examples/pie/components/BasicsPie.vue"),
     },
     {
         path: "/scaleBox",
@@ -28,15 +28,15 @@ const routes: RouteRecordRaw[] = [
         meta: {
             title: "scaleBox",
         },
-        component: () => import(/* webpackChunkName: "scaleBox" */ "@/components/scaleBox/ScaleBox.vue"),
+        component: () => import(/* webpackChunkName: "scaleBox" */ "@/examples/scaleBox/components/BasicsScaleBox.vue"),
     },
     {
         path: "/selectAll",
         name: "selectAll",
         meta: {
-            title: "scaleBox",
+            title: "selectAll",
         },
-        component: () => import(/* webpackChunkName: "selectAll" */ "@/components/selectAll/SelectAll.vue"),
+        component: () => import(/* webpackChunkName: "selectAll" */ "@/examples/selectAll/components/BasicsSelectAll.vue"),
     },
     {
         path: "/numberAnimate",
@@ -44,7 +44,7 @@ const routes: RouteRecordRaw[] = [
         meta: {
             title: "numberAnimate",
         },
-        component: () => import(/* webpackChunkName: "numberAnimate" */ "@/components/numberAnimate/test.vue"),
+        component: () => import(/* webpackChunkName: "numberAnimate" */ "@/examples/numberAnimate/components/BasicsNumberAnimate.vue"),
     },
     {
         path: "/scrollBar",
@@ -52,7 +52,7 @@ const routes: RouteRecordRaw[] = [
         meta: {
             title: "scrollBar",
         },
-        component: () => import(/* webpackChunkName: "scrollBar" */ "@/components/scrollBar/demo/demo.vue"),
+        component: () => import(/* webpackChunkName: "scrollBar" */ "@/examples/scrollBar/components/BasicsScrollBar.vue"),
     },
     {
         path: "/visibleComponent",
@@ -60,7 +60,7 @@ const routes: RouteRecordRaw[] = [
         meta: {
             title: "visibleComponent",
         },
-        component: () => import(/* webpackChunkName: "visibleComponent" */ "@/components/visibleComponent/demo/demo.vue"),
+        component: () => import(/* webpackChunkName: "visibleComponent" */ "@/examples/visibleComponent/components/BasicsVisibleComponent.vue"),
     },
 ];
 const router = createRouter({

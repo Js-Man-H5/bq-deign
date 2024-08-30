@@ -1,13 +1,14 @@
 /*
  * @Author: jack.hai
  * @Date: 2022-11-22 10:22:48
- * @LastEditTime: 2024-08-01 15:58:48
+ * @LastEditTime: 2024-08-30 17:19:06
  * @Description:
  */
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import { resolve } from "path";
 import { pluginsConfig, resolveConfig } from "./scripts/preview";
+import Inspect from "vite-plugin-inspect";
 import dts from "vite-plugin-dts";
 export default defineConfig(() => {
     return {
@@ -51,7 +52,6 @@ export default defineConfig(() => {
         },
         plugins: [
             vue(),
-
             dts({
                 tsconfigPath: "./tsconfig.prod.json",
                 outDir: "build/lib",
@@ -61,6 +61,10 @@ export default defineConfig(() => {
                 outDir: "build/es",
             }),
             ...pluginsConfig,
+            // Inspect({
+            //     build: true,
+            //     outputDir: ".vite-inspect",
+            // }),
         ],
         resolve: resolveConfig,
     };

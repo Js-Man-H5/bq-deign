@@ -1,7 +1,7 @@
 <!--
  * @Author: jack.hai
  * @Date: 2022-11-22 10:22:48
- * @LastEditTime: 2024-08-27 11:40:40
+ * @LastEditTime: 2024-08-30 17:17:46
  * @Description:
 -->
 
@@ -93,7 +93,8 @@ pnpm start
 
 ## 组件开发流程
 
--   在`bq-design/packages/components/`下建立组件，若在页面展示组件，在该路径创建页面`bq-design/packages/components/xxx/demo/demo.vue`
+-   在`bq-design/packages/components/`下建立组件
+-   在`bq-design/examples/`下建立测试组件
 -   组件开发完成，在 `bq-design/packages/components/index` 路径下添加相关组件、同时需要在`bq-design/typings/components.d` 中新增类型，确保组件打包后可以正常识别类型
 
 ## 注意

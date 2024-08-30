@@ -1,12 +1,12 @@
 /*
  * @Author: jack.hai
  * @Date: 2024-05-14 15:49:28
- * @LastEditTime: 2024-08-30 10:02:58
+ * @LastEditTime: 2024-08-30 11:02:03
  * @Description:
  */
 import Theme from "vitepress/theme";
 import { App } from "vue";
-import asyncComponents from "@examples/index";
+import asyncComponents from "@/examples/index";
 // import { BqBasicsButton } from "@examples/button/index";
 import { domResize } from "@/directives/domResize";
 import { h, defineAsyncComponent } from "vue";
