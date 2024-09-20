@@ -36,6 +36,7 @@ export default defineConfig({
                     { text: "数字翻牌器", link: "/number-animate-examples" },
                     { text: "ScrollBar", link: "/scroll-bar-examples" },
                     { text: "可视组件", link: "/view-examples" },
+                    { text: "Action组件", link: "/action-examples" },
                     // { text: "Runtime API Examples", link: "/api-examples" },
                 ],
             },

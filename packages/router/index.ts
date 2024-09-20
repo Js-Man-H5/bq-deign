@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2022-11-23 13:43:29
- * @LastEditTime: 2024-08-30 11:40:15
+ * @LastEditTime: 2024-09-18 15:05:09
  * @Description:
  */
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
@@ -61,6 +61,14 @@ const routes: RouteRecordRaw[] = [
             title: "visibleComponent",
         },
         component: () => import(/* webpackChunkName: "visibleComponent" */ "@/examples/visibleComponent/components/BasicsVisibleComponent.vue"),
+    },
+    {
+        path: "/action",
+        name: "action",
+        meta: {
+            title: "action",
+        },
+        component: () => import(/* webpackChunkName: "action" */ "@/examples/action/components/BasicsAction.vue"),
     },
 ];
 const router = createRouter({

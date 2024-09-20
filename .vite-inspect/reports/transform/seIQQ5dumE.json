@@ -1,0 +1,131 @@
+{
+    "resolvedId": "/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/App.vue",
+    "transforms": [
+        {
+            "name": "__load__",
+            "result": "<!--\n * @Author: jack.hai\n * @Date: 2024-05-14 16:51:09\n * @LastEditTime: 2024-05-21 16:31:11\n * @Description:\n-->\n<template>\n    <RouterView></RouterView>\n</template>\n\n<script lang=\"ts\" setup>\n// import { install,Button } from \"ant-design-vue\";\ndefineOptions({\n    name: \"App\",\n});\n</script>\n\n<style lang=\"scss\" scoped></style>\n",
+            "start": 1725009515990,
+            "end": 1725009515990
+        },
+        {
+            "name": "vite:css",
+            "start": 1725009515990,
+            "end": 1725009515990,
+            "order": "normal"
+        },
+        {
+            "name": "vite:esbuild",
+            "start": 1725009515990,
+            "end": 1725009515990,
+            "order": "normal"
+        },
+        {
+            "name": "vite:json",
+            "start": 1725009515990,
+            "end": 1725009515990,
+            "order": "normal"
+        },
+        {
+            "name": "vite:worker",
+            "start": 1725009515990,
+            "end": 1725009515991,
+            "order": "normal"
+        },
+        {
+            "name": "vite:vue",
+            "result": "import { defineComponent as _defineComponent } from \"vue\";\nconst _sfc_main = /* @__PURE__ */ _defineComponent({\n  ...{\n    name: \"App\"\n  },\n  __name: \"App\",\n  setup(__props, { expose: __expose }) {\n    __expose();\n    const __returned__ = {};\n    Object.defineProperty(__returned__, \"__isScriptSetup\", { enumerable: false, value: true });\n    return __returned__;\n  }\n});\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_RouterView = _resolveComponent(\"RouterView\");\n  return _openBlock(), _createBlock(_component_RouterView);\n}\n_sfc_main.__hmrId = \"4ad06100\";\ntypeof __VUE_HMR_RUNTIME__ !== \"undefined\" && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main);\nimport.meta.hot.accept((mod) => {\n  if (!mod)\n    return;\n  const { default: updated, _rerender_only } = mod;\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render);\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated);\n  }\n});\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"render\", _sfc_render], [\"__file\", \"/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/App.vue\"]]);\n",
+            "start": 1725009515991,
+            "end": 1725009516141,
+            "order": "normal",
+            "sourcemaps": {
+                "version": 3,
+                "mappings": ";;;;;;;;;;;;;;;;uBAOI,aAAyB",
+                "names": [],
+                "ignoreList": [],
+                "sources": ["/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/App.vue"],
+                "sourcesContent": [
+                    "<!--\n * @Author: jack.hai\n * @Date: 2024-05-14 16:51:09\n * @LastEditTime: 2024-05-21 16:31:11\n * @Description:\n-->\n<template>\n    <RouterView></RouterView>\n</template>\n\n<script lang=\"ts\" setup>\n// import { install,Button } from \"ant-design-vue\";\ndefineOptions({\n    name: \"App\",\n});\n</script>\n\n<style lang=\"scss\" scoped></style>\n"
+                ],
+                "file": "/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/App.vue"
+            }
+        },
+        {
+            "name": "vite:define",
+            "start": 1725009516141,
+            "end": 1725009516141,
+            "order": "normal"
+        },
+        {
+            "name": "vite:css-post",
+            "start": 1725009516141,
+            "end": 1725009516141,
+            "order": "normal"
+        },
+        {
+            "name": "vite:worker-import-meta-url",
+            "start": 1725009516141,
+            "end": 1725009516141,
+            "order": "normal"
+        },
+        {
+            "name": "vite:asset-import-meta-url",
+            "start": 1725009516141,
+            "end": 1725009516141,
+            "order": "normal"
+        },
+        {
+            "name": "vite:dynamic-import-vars",
+            "start": 1725009516141,
+            "end": 1725009516141,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-glob",
+            "start": 1725009516141,
+            "end": 1725009516141,
+            "order": "normal"
+        },
+        {
+            "name": "unplugin-auto-import",
+            "start": 1725009516141,
+            "end": 1725009516143,
+            "order": "post"
+        },
+        {
+            "name": "unplugin-vue-components",
+            "result": "/* unplugin-vue-components disabled */import { defineComponent as _defineComponent } from \"vue\";\nconst _sfc_main = /* @__PURE__ */ _defineComponent({\n  ...{\n    name: \"App\"\n  },\n  __name: \"App\",\n  setup(__props, { expose: __expose }) {\n    __expose();\n    const __returned__ = {};\n    Object.defineProperty(__returned__, \"__isScriptSetup\", { enumerable: false, value: true });\n    return __returned__;\n  }\n});\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_RouterView = _resolveComponent(\"RouterView\");\n  return _openBlock(), _createBlock(_component_RouterView);\n}\n_sfc_main.__hmrId = \"4ad06100\";\ntypeof __VUE_HMR_RUNTIME__ !== \"undefined\" && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main);\nimport.meta.hot.accept((mod) => {\n  if (!mod)\n    return;\n  const { default: updated, _rerender_only } = mod;\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render);\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated);\n  }\n});\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"render\", _sfc_render], [\"__file\", \"/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/App.vue\"]]);\n",
+            "start": 1725009516143,
+            "end": 1725009516145,
+            "order": "post",
+            "sourcemaps": {
+                "version": 3,
+                "sources": ["/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/App.vue"],
+                "sourcesContent": [
+                    "import { defineComponent as _defineComponent } from \"vue\";\nconst _sfc_main = /* @__PURE__ */ _defineComponent({\n  ...{\n    name: \"App\"\n  },\n  __name: \"App\",\n  setup(__props, { expose: __expose }) {\n    __expose();\n    const __returned__ = {};\n    Object.defineProperty(__returned__, \"__isScriptSetup\", { enumerable: false, value: true });\n    return __returned__;\n  }\n});\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_RouterView = _resolveComponent(\"RouterView\");\n  return _openBlock(), _createBlock(_component_RouterView);\n}\n_sfc_main.__hmrId = \"4ad06100\";\ntypeof __VUE_HMR_RUNTIME__ !== \"undefined\" && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main);\nimport.meta.hot.accept((mod) => {\n  if (!mod)\n    return;\n  const { default: updated, _rerender_only } = mod;\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render);\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated);\n  }\n});\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"render\", _sfc_render], [\"__file\", \"/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/App.vue\"]]);\n"
+                ],
+                "names": [],
+                "mappings": "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"
+            }
+        },
+        {
+            "name": "vite:client-inject",
+            "start": 1725009516145,
+            "end": 1725009516145,
+            "order": "normal"
+        },
+        {
+            "name": "vite:css-analysis",
+            "start": 1725009516145,
+            "end": 1725009516145,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-analysis",
+            "result": "import { createHotContext as __vite__createHotContext } from \"/@vite/client\";import.meta.hot = __vite__createHotContext(\"/packages/App.vue\");/* unplugin-vue-components disabled */import { defineComponent as _defineComponent } from \"/node_modules/.vite/deps/vue.js?v=dc4298c9\";\nconst _sfc_main = /* @__PURE__ */ _defineComponent({\n  ...{\n    name: \"App\"\n  },\n  __name: \"App\",\n  setup(__props, { expose: __expose }) {\n    __expose();\n    const __returned__ = {};\n    Object.defineProperty(__returned__, \"__isScriptSetup\", { enumerable: false, value: true });\n    return __returned__;\n  }\n});\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"/node_modules/.vite/deps/vue.js?v=dc4298c9\";\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_RouterView = _resolveComponent(\"RouterView\");\n  return _openBlock(), _createBlock(_component_RouterView);\n}\n_sfc_main.__hmrId = \"4ad06100\";\ntypeof __VUE_HMR_RUNTIME__ !== \"undefined\" && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main);\nimport.meta.hot.accept((mod) => {\n  if (!mod)\n    return;\n  const { default: updated, _rerender_only } = mod;\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render);\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated);\n  }\n});\nimport _export_sfc from \"/@id/__x00__plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"render\", _sfc_render], [\"__file\", \"/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/App.vue\"]]);\n",
+            "start": 1725009516145,
+            "end": 1725009516146,
+            "order": "normal",
+            "sourcemaps": null
+        }
+    ]
+}

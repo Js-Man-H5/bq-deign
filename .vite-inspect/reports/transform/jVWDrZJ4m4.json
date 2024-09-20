@@ -1,0 +1,12 @@
+{
+    "resolvedId": "\u0000plugin-vue:export-helper",
+    "transforms": [
+        {
+            "name": "vite:vue",
+            "result": "\nexport default (sfc, props) => {\n  const target = sfc.__vccOpts || sfc;\n  for (const [key, val] of props) {\n    target[key] = val;\n  }\n  return target;\n}\n",
+            "start": 1725009516146,
+            "end": 1725009516146,
+            "sourcemaps": null
+        }
+    ]
+}

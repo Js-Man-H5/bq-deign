@@ -1,0 +1,142 @@
+{
+    "resolvedId": "/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/components/button/Button.vue?vue&type=style&index=0&scoped=a45f82dc&lang.scss",
+    "transforms": [
+        {
+            "name": "vite:vue",
+            "result": "\n@import \"@theme-chalk/button.scss\";\n",
+            "start": 1725009516261,
+            "end": 1725009516261,
+            "sourcemaps": {
+                "version": 3,
+                "sources": ["/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/components/button/Button.vue"],
+                "names": [],
+                "mappings": ";AAmBA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC",
+                "file": "/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/components/button/Button.vue",
+                "sourceRoot": "",
+                "sourcesContent": [
+                    "<!--\n * @Author: jack.hai\n * @Date: 2024-05-14 15:33:01\n * @LastEditTime: 2024-05-24 09:39:18\n * @Description:\n-->\n<template>\n    <div class=\"bq-button\">\n        <span>-测试按钮-6</span>\n    </div>\n</template>\n\n<script setup lang=\"ts\">\ndefineOptions({\n    name: \"BqButton\",\n});\n</script>\n\n<style lang=\"scss\" scoped>\n@import \"@theme-chalk/button.scss\";\n</style>\n"
+                ]
+            }
+        },
+        {
+            "name": "vite:css",
+            "result": ".bq-button {\n  background-color: blue;\n}",
+            "start": 1725009516261,
+            "end": 1725009516275,
+            "order": "normal",
+            "sourcemaps": {
+                "mappings": ""
+            }
+        },
+        {
+            "name": "vite:esbuild",
+            "start": 1725009516275,
+            "end": 1725009516275,
+            "order": "normal"
+        },
+        {
+            "name": "vite:json",
+            "start": 1725009516275,
+            "end": 1725009516275,
+            "order": "normal"
+        },
+        {
+            "name": "vite:worker",
+            "start": 1725009516275,
+            "end": 1725009516275,
+            "order": "normal"
+        },
+        {
+            "name": "vite:vue",
+            "result": ".bq-button[data-v-a45f82dc] {\n  background-color: blue;\n}",
+            "start": 1725009516275,
+            "end": 1725009516278,
+            "order": "normal",
+            "sourcemaps": {
+                "mappings": ""
+            }
+        },
+        {
+            "name": "vite:define",
+            "start": 1725009516278,
+            "end": 1725009516278,
+            "order": "normal"
+        },
+        {
+            "name": "vite:css-post",
+            "result": "import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/components/button/Button.vue?vue&type=style&index=0&scoped=a45f82dc&lang.scss\"\nconst __vite__css = \".bq-button[data-v-a45f82dc] {\\n  background-color: blue;\\n}\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))",
+            "start": 1725009516278,
+            "end": 1725009516278,
+            "order": "normal",
+            "sourcemaps": {
+                "mappings": ""
+            }
+        },
+        {
+            "name": "vite:worker-import-meta-url",
+            "start": 1725009516278,
+            "end": 1725009516278,
+            "order": "normal"
+        },
+        {
+            "name": "vite:asset-import-meta-url",
+            "start": 1725009516278,
+            "end": 1725009516278,
+            "order": "normal"
+        },
+        {
+            "name": "vite:dynamic-import-vars",
+            "start": 1725009516278,
+            "end": 1725009516278,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-glob",
+            "start": 1725009516278,
+            "end": 1725009516278,
+            "order": "normal"
+        },
+        {
+            "name": "unplugin-auto-import",
+            "start": 1725009516278,
+            "end": 1725009516278,
+            "order": "post"
+        },
+        {
+            "name": "unplugin-vue-components",
+            "result": "/* unplugin-vue-components disabled */import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/components/button/Button.vue?vue&type=style&index=0&scoped=a45f82dc&lang.scss\"\nconst __vite__css = \".bq-button[data-v-a45f82dc] {\\n  background-color: blue;\\n}\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))",
+            "start": 1725009516278,
+            "end": 1725009516279,
+            "order": "post",
+            "sourcemaps": {
+                "version": 3,
+                "sources": ["/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/components/button/Button.vue?vue&type=style&index=0&scoped=a45f82dc&lang.scss"],
+                "sourcesContent": [
+                    "import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/components/button/Button.vue?vue&type=style&index=0&scoped=a45f82dc&lang.scss\"\nconst __vite__css = \".bq-button[data-v-a45f82dc] {\\n  background-color: blue;\\n}\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))"
+                ],
+                "names": [],
+                "mappings": "sCAAA,MAAM,CAAC,CAAC,CAAC,WAAW,CAAC,EAAE,CAAC,mBAAmB,CAAC,CAAC,WAAW,CAAC,EAAE,CAAC,mBAAmB,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC,MAAM,CAAC;AACtG,KAAK,CAAC,UAAU,CAAC,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,UAAU,CAAC,OAAO,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE,CAAC,MAAM,CAAC,QAAQ,CAAC,UAAU,CAAC,MAAM,CAAC,MAAM,CAAC,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,KAAK,CAAC,KAAK,CAAC,CAAC,CAAC,MAAM,CAAC,QAAQ,CAAC,IAAI,CAAC,IAAI,CAAC;AACzJ,KAAK,CAAC,WAAW,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,MAAM,CAAC,IAAI,CAAC,CAAC,CAAC,QAAQ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,UAAU,CAAC,KAAK,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,CAAC;AACjF,mBAAmB,CAAC,UAAU,CAAC,CAAC,WAAW,CAAC;AAC5C,MAAM,CAAC,IAAI,CAAC,GAAG,CAAC,MAAM,CAAC,CAAC;AACxB,MAAM,CAAC,IAAI,CAAC,GAAG,CAAC,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,mBAAmB,CAAC,UAAU,CAAC"
+            }
+        },
+        {
+            "name": "vite:client-inject",
+            "start": 1725009516279,
+            "end": 1725009516279,
+            "order": "normal"
+        },
+        {
+            "name": "vite:css-analysis",
+            "start": 1725009516279,
+            "end": 1725009516279,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-analysis",
+            "result": "import { createHotContext as __vite__createHotContext } from \"/@vite/client\";import.meta.hot = __vite__createHotContext(\"/packages/components/button/Button.vue?vue&type=style&index=0&scoped=a45f82dc&lang.scss\");/* unplugin-vue-components disabled */import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/components/button/Button.vue?vue&type=style&index=0&scoped=a45f82dc&lang.scss\"\nconst __vite__css = \".bq-button[data-v-a45f82dc] {\\n  background-color: blue;\\n}\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))",
+            "start": 1725009516279,
+            "end": 1725009516279,
+            "order": "normal",
+            "sourcemaps": null
+        }
+    ]
+}

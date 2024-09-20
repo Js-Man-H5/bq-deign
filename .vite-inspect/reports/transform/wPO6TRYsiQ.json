@@ -1,0 +1,119 @@
+{
+    "resolvedId": "/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/directives/domResize.ts",
+    "transforms": [
+        {
+            "name": "__load__",
+            "result": "/*\n * @Author: jack.hai\n * @Date: 2024-05-16 15:54:29\n * @LastEditTime: 2024-05-16 16:13:10\n * @Description:\n */\nimport ResizeObserver from \"resize-observer-polyfill\";\n// v-dom-resize 指令，绑定在dom元素上即可，监听dom尺寸变化，调用传入方法\nimport type { ObjectDirective } from \"vue\";\nexport const domResize: ObjectDirective = {\n    mounted(el, binding) {\n        const resizeFun = (observer: ResizeObserverEntry[]) => {\n            binding.value(observer);\n        };\n        const observer = new ResizeObserver(resizeFun);\n        observer.observe(el);\n        el._observer = observer;\n    },\n    unmounted(el) {\n        el._observer.disconnect();\n        el._observer = null;\n        delete el._observer;\n    },\n};\n",
+            "start": 1725009516011,
+            "end": 1725009516011
+        },
+        {
+            "name": "vite:css",
+            "start": 1725009516011,
+            "end": 1725009516011,
+            "order": "normal"
+        },
+        {
+            "name": "vite:esbuild",
+            "result": "import ResizeObserver from \"resize-observer-polyfill\";\nexport const domResize = {\n  mounted(el, binding) {\n    const resizeFun = (observer2) => {\n      binding.value(observer2);\n    };\n    const observer = new ResizeObserver(resizeFun);\n    observer.observe(el);\n    el._observer = observer;\n  },\n  unmounted(el) {\n    el._observer.disconnect();\n    el._observer = null;\n    delete el._observer;\n  }\n};\n",
+            "start": 1725009516011,
+            "end": 1725009516148,
+            "order": "normal",
+            "sourcemaps": {
+                "version": 3,
+                "sources": ["domResize.ts"],
+                "sourcesContent": [
+                    "/*\n * @Author: jack.hai\n * @Date: 2024-05-16 15:54:29\n * @LastEditTime: 2024-05-16 16:13:10\n * @Description:\n */\nimport ResizeObserver from \"resize-observer-polyfill\";\n// v-dom-resize 指令，绑定在dom元素上即可，监听dom尺寸变化，调用传入方法\nimport type { ObjectDirective } from \"vue\";\nexport const domResize: ObjectDirective = {\n    mounted(el, binding) {\n        const resizeFun = (observer: ResizeObserverEntry[]) => {\n            binding.value(observer);\n        };\n        const observer = new ResizeObserver(resizeFun);\n        observer.observe(el);\n        el._observer = observer;\n    },\n    unmounted(el) {\n        el._observer.disconnect();\n        el._observer = null;\n        delete el._observer;\n    },\n};\n"
+                ],
+                "mappings": "AAMA,OAAO,oBAAoB;AAGpB,aAAM,YAA6B;AAAA,EACtC,QAAQ,IAAI,SAAS;AACjB,UAAM,YAAY,CAACA,cAAoC;AACnD,cAAQ,MAAMA,SAAQ;AAAA,IAC1B;AACA,UAAM,WAAW,IAAI,eAAe,SAAS;AAC7C,aAAS,QAAQ,EAAE;AACnB,OAAG,YAAY;AAAA,EACnB;AAAA,EACA,UAAU,IAAI;AACV,OAAG,UAAU,WAAW;AACxB,OAAG,YAAY;AACf,WAAO,GAAG;AAAA,EACd;AACJ;",
+                "names": ["observer"]
+            }
+        },
+        {
+            "name": "vite:json",
+            "start": 1725009516148,
+            "end": 1725009516148,
+            "order": "normal"
+        },
+        {
+            "name": "vite:worker",
+            "start": 1725009516148,
+            "end": 1725009516148,
+            "order": "normal"
+        },
+        {
+            "name": "vite:vue",
+            "start": 1725009516148,
+            "end": 1725009516148,
+            "order": "normal"
+        },
+        {
+            "name": "vite:define",
+            "start": 1725009516148,
+            "end": 1725009516148,
+            "order": "normal"
+        },
+        {
+            "name": "vite:css-post",
+            "start": 1725009516148,
+            "end": 1725009516148,
+            "order": "normal"
+        },
+        {
+            "name": "vite:worker-import-meta-url",
+            "start": 1725009516148,
+            "end": 1725009516148,
+            "order": "normal"
+        },
+        {
+            "name": "vite:asset-import-meta-url",
+            "start": 1725009516148,
+            "end": 1725009516148,
+            "order": "normal"
+        },
+        {
+            "name": "vite:dynamic-import-vars",
+            "start": 1725009516148,
+            "end": 1725009516148,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-glob",
+            "start": 1725009516148,
+            "end": 1725009516148,
+            "order": "normal"
+        },
+        {
+            "name": "unplugin-auto-import",
+            "start": 1725009516148,
+            "end": 1725009516150,
+            "order": "post"
+        },
+        {
+            "name": "unplugin-vue-components",
+            "start": 1725009516150,
+            "end": 1725009516150,
+            "order": "post"
+        },
+        {
+            "name": "vite:client-inject",
+            "start": 1725009516150,
+            "end": 1725009516150,
+            "order": "normal"
+        },
+        {
+            "name": "vite:css-analysis",
+            "start": 1725009516150,
+            "end": 1725009516150,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-analysis",
+            "result": "import ResizeObserver from \"/node_modules/.vite/deps/resize-observer-polyfill.js?v=ce9f3c73\";\nexport const domResize = {\n  mounted(el, binding) {\n    const resizeFun = (observer2) => {\n      binding.value(observer2);\n    };\n    const observer = new ResizeObserver(resizeFun);\n    observer.observe(el);\n    el._observer = observer;\n  },\n  unmounted(el) {\n    el._observer.disconnect();\n    el._observer = null;\n    delete el._observer;\n  }\n};\n",
+            "start": 1725009516150,
+            "end": 1725009516152,
+            "order": "normal",
+            "sourcemaps": null
+        }
+    ]
+}

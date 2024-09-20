@@ -1,0 +1,131 @@
+{
+    "resolvedId": "/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/examples/button/components/BasicsButton.vue",
+    "transforms": [
+        {
+            "name": "__load__",
+            "result": "<!--\n * @Author: jack.hai\n * @Date: 2024-05-16 14:44:35\n * @LastEditTime: 2024-08-30 11:10:37\n * @Description:\n-->\n<template>\n    <div>\n        <Button>1111</Button>\n    </div>\n</template>\n\n<script setup lang=\"ts\">\ndefineOptions({ name: \"BqBasicsButton\" });\n</script>\n\n<style lang=\"scss\" scoped></style>\n",
+            "start": 1725009516243,
+            "end": 1725009516243
+        },
+        {
+            "name": "vite:css",
+            "start": 1725009516243,
+            "end": 1725009516243,
+            "order": "normal"
+        },
+        {
+            "name": "vite:esbuild",
+            "start": 1725009516243,
+            "end": 1725009516243,
+            "order": "normal"
+        },
+        {
+            "name": "vite:json",
+            "start": 1725009516243,
+            "end": 1725009516243,
+            "order": "normal"
+        },
+        {
+            "name": "vite:worker",
+            "start": 1725009516243,
+            "end": 1725009516243,
+            "order": "normal"
+        },
+        {
+            "name": "vite:vue",
+            "result": "import { defineComponent as _defineComponent } from \"vue\";\nconst _sfc_main = /* @__PURE__ */ _defineComponent({\n  ...{ name: \"BqBasicsButton\" },\n  __name: \"BasicsButton\",\n  setup(__props, { expose: __expose }) {\n    __expose();\n    const __returned__ = {};\n    Object.defineProperty(__returned__, \"__isScriptSetup\", { enumerable: false, value: true });\n    return __returned__;\n  }\n});\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_Button = _resolveComponent(\"Button\");\n  return _openBlock(), _createElementBlock(\"div\", null, [\n    _createVNode(_component_Button, null, {\n      default: _withCtx(() => [\n        _createTextVNode(\"1111\")\n      ]),\n      _: 1\n      /* STABLE */\n    })\n  ]);\n}\n_sfc_main.__hmrId = \"6c838fb9\";\ntypeof __VUE_HMR_RUNTIME__ !== \"undefined\" && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main);\nimport.meta.hot.accept((mod) => {\n  if (!mod)\n    return;\n  const { default: updated, _rerender_only } = mod;\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render);\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated);\n  }\n});\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"render\", _sfc_render], [\"__file\", \"/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/examples/button/components/BasicsButton.vue\"]]);\n",
+            "start": 1725009516243,
+            "end": 1725009516248,
+            "order": "normal",
+            "sourcemaps": {
+                "version": 3,
+                "mappings": ";;;;;;;;;;;;;;uBAOI,oBAEM;AAAA,IADF,aAAqB;AAAA,MAR7B,kBAQgB,MAAI;AAAA,QARpB,iBAQgB,MAAI;AAAA;MARpB;AAAA;AAAA",
+                "names": [],
+                "ignoreList": [],
+                "sources": ["/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/examples/button/components/BasicsButton.vue"],
+                "sourcesContent": [
+                    "<!--\n * @Author: jack.hai\n * @Date: 2024-05-16 14:44:35\n * @LastEditTime: 2024-08-30 11:10:37\n * @Description:\n-->\n<template>\n    <div>\n        <Button>1111</Button>\n    </div>\n</template>\n\n<script setup lang=\"ts\">\ndefineOptions({ name: \"BqBasicsButton\" });\n</script>\n\n<style lang=\"scss\" scoped></style>\n"
+                ],
+                "file": "/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/examples/button/components/BasicsButton.vue"
+            }
+        },
+        {
+            "name": "vite:define",
+            "start": 1725009516248,
+            "end": 1725009516248,
+            "order": "normal"
+        },
+        {
+            "name": "vite:css-post",
+            "start": 1725009516248,
+            "end": 1725009516248,
+            "order": "normal"
+        },
+        {
+            "name": "vite:worker-import-meta-url",
+            "start": 1725009516248,
+            "end": 1725009516248,
+            "order": "normal"
+        },
+        {
+            "name": "vite:asset-import-meta-url",
+            "start": 1725009516248,
+            "end": 1725009516248,
+            "order": "normal"
+        },
+        {
+            "name": "vite:dynamic-import-vars",
+            "start": 1725009516248,
+            "end": 1725009516248,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-glob",
+            "start": 1725009516248,
+            "end": 1725009516248,
+            "order": "normal"
+        },
+        {
+            "name": "unplugin-auto-import",
+            "start": 1725009516248,
+            "end": 1725009516250,
+            "order": "post"
+        },
+        {
+            "name": "unplugin-vue-components",
+            "result": "/* unplugin-vue-components disabled */import __unplugin_components_0 from '/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/components/button/Button.vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nconst _sfc_main = /* @__PURE__ */ _defineComponent({\n  ...{ name: \"BqBasicsButton\" },\n  __name: \"BasicsButton\",\n  setup(__props, { expose: __expose }) {\n    __expose();\n    const __returned__ = {};\n    Object.defineProperty(__returned__, \"__isScriptSetup\", { enumerable: false, value: true });\n    return __returned__;\n  }\n});\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_Button = __unplugin_components_0;\n  return _openBlock(), _createElementBlock(\"div\", null, [\n    _createVNode(_component_Button, null, {\n      default: _withCtx(() => [\n        _createTextVNode(\"1111\")\n      ]),\n      _: 1\n      /* STABLE */\n    })\n  ]);\n}\n_sfc_main.__hmrId = \"6c838fb9\";\ntypeof __VUE_HMR_RUNTIME__ !== \"undefined\" && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main);\nimport.meta.hot.accept((mod) => {\n  if (!mod)\n    return;\n  const { default: updated, _rerender_only } = mod;\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render);\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated);\n  }\n});\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"render\", _sfc_render], [\"__file\", \"/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/examples/button/components/BasicsButton.vue\"]]);\n",
+            "start": 1725009516250,
+            "end": 1725009516252,
+            "order": "post",
+            "sourcemaps": {
+                "version": 3,
+                "sources": ["/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/examples/button/components/BasicsButton.vue"],
+                "sourcesContent": [
+                    "import { defineComponent as _defineComponent } from \"vue\";\nconst _sfc_main = /* @__PURE__ */ _defineComponent({\n  ...{ name: \"BqBasicsButton\" },\n  __name: \"BasicsButton\",\n  setup(__props, { expose: __expose }) {\n    __expose();\n    const __returned__ = {};\n    Object.defineProperty(__returned__, \"__isScriptSetup\", { enumerable: false, value: true });\n    return __returned__;\n  }\n});\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_Button = _resolveComponent(\"Button\");\n  return _openBlock(), _createElementBlock(\"div\", null, [\n    _createVNode(_component_Button, null, {\n      default: _withCtx(() => [\n        _createTextVNode(\"1111\")\n      ]),\n      _: 1\n      /* STABLE */\n    })\n  ]);\n}\n_sfc_main.__hmrId = \"6c838fb9\";\ntypeof __VUE_HMR_RUNTIME__ !== \"undefined\" && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main);\nimport.meta.hot.accept((mod) => {\n  if (!mod)\n    return;\n  const { default: updated, _rerender_only } = mod;\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render);\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated);\n  }\n});\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"render\", _sfc_render], [\"__file\", \"/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/examples/button/components/BasicsButton.vue\"]]);\n"
+                ],
+                "names": [],
+                "mappings": "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"
+            }
+        },
+        {
+            "name": "vite:client-inject",
+            "start": 1725009516252,
+            "end": 1725009516252,
+            "order": "normal"
+        },
+        {
+            "name": "vite:css-analysis",
+            "start": 1725009516252,
+            "end": 1725009516252,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-analysis",
+            "result": "import { createHotContext as __vite__createHotContext } from \"/@vite/client\";import.meta.hot = __vite__createHotContext(\"/packages/examples/button/components/BasicsButton.vue\");/* unplugin-vue-components disabled */import __unplugin_components_0 from \"/packages/components/button/Button.vue\";\nimport { defineComponent as _defineComponent } from \"/node_modules/.vite/deps/vue.js?v=dc4298c9\";\nconst _sfc_main = /* @__PURE__ */ _defineComponent({\n  ...{ name: \"BqBasicsButton\" },\n  __name: \"BasicsButton\",\n  setup(__props, { expose: __expose }) {\n    __expose();\n    const __returned__ = {};\n    Object.defineProperty(__returned__, \"__isScriptSetup\", { enumerable: false, value: true });\n    return __returned__;\n  }\n});\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"/node_modules/.vite/deps/vue.js?v=dc4298c9\";\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_Button = __unplugin_components_0;\n  return _openBlock(), _createElementBlock(\"div\", null, [\n    _createVNode(_component_Button, null, {\n      default: _withCtx(() => [\n        _createTextVNode(\"1111\")\n      ]),\n      _: 1\n      /* STABLE */\n    })\n  ]);\n}\n_sfc_main.__hmrId = \"6c838fb9\";\ntypeof __VUE_HMR_RUNTIME__ !== \"undefined\" && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main);\nimport.meta.hot.accept((mod) => {\n  if (!mod)\n    return;\n  const { default: updated, _rerender_only } = mod;\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render);\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated);\n  }\n});\nimport _export_sfc from \"/@id/__x00__plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"render\", _sfc_render], [\"__file\", \"/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/examples/button/components/BasicsButton.vue\"]]);\n",
+            "start": 1725009516252,
+            "end": 1725009516253,
+            "order": "normal",
+            "sourcemaps": null
+        }
+    ]
+}

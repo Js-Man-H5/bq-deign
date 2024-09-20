@@ -1,0 +1,119 @@
+{
+    "resolvedId": "/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/main.ts",
+    "transforms": [
+        {
+            "name": "__load__",
+            "result": "/*\n * @Author: jack.hai\n * @Date: 2024-05-14 16:49:59\n * @LastEditTime: 2024-05-22 13:49:49\n * @Description:\n */\nimport { createApp } from \"vue\";\nimport App from \"./App.vue\";\n/* 样式文件 */\nimport router from \"./router\";\nimport { domResize } from \"./directives/domResize\";\nimport \"./theme-chalk/global.scss\";\nconst app = createApp(App);\napp.directive(\"domResize\", domResize);\napp.use(router).mount(\"#app\");\n",
+            "start": 1725009515955,
+            "end": 1725009515955
+        },
+        {
+            "name": "vite:css",
+            "start": 1725009515955,
+            "end": 1725009515955,
+            "order": "normal"
+        },
+        {
+            "name": "vite:esbuild",
+            "result": "import { createApp } from \"vue\";\nimport App from \"./App.vue\";\nimport router from \"./router\";\nimport { domResize } from \"./directives/domResize\";\nimport \"./theme-chalk/global.scss\";\nconst app = createApp(App);\napp.directive(\"domResize\", domResize);\napp.use(router).mount(\"#app\");\n",
+            "start": 1725009515955,
+            "end": 1725009515957,
+            "order": "normal",
+            "sourcemaps": {
+                "version": 3,
+                "sources": ["main.ts"],
+                "sourcesContent": [
+                    "/*\n * @Author: jack.hai\n * @Date: 2024-05-14 16:49:59\n * @LastEditTime: 2024-05-22 13:49:49\n * @Description:\n */\nimport { createApp } from \"vue\";\nimport App from \"./App.vue\";\n/* 样式文件 */\nimport router from \"./router\";\nimport { domResize } from \"./directives/domResize\";\nimport \"./theme-chalk/global.scss\";\nconst app = createApp(App);\napp.directive(\"domResize\", domResize);\napp.use(router).mount(\"#app\");\n"
+                ],
+                "mappings": "AAMA,SAAS,iBAAiB;AAC1B,OAAO,SAAS;AAEhB,OAAO,YAAY;AACnB,SAAS,iBAAiB;AAC1B,OAAO;AACP,MAAM,MAAM,UAAU,GAAG;AACzB,IAAI,UAAU,aAAa,SAAS;AACpC,IAAI,IAAI,MAAM,EAAE,MAAM,MAAM;",
+                "names": []
+            }
+        },
+        {
+            "name": "vite:json",
+            "start": 1725009515957,
+            "end": 1725009515957,
+            "order": "normal"
+        },
+        {
+            "name": "vite:worker",
+            "start": 1725009515957,
+            "end": 1725009515957,
+            "order": "normal"
+        },
+        {
+            "name": "vite:vue",
+            "start": 1725009515957,
+            "end": 1725009515957,
+            "order": "normal"
+        },
+        {
+            "name": "vite:define",
+            "start": 1725009515957,
+            "end": 1725009515957,
+            "order": "normal"
+        },
+        {
+            "name": "vite:css-post",
+            "start": 1725009515957,
+            "end": 1725009515957,
+            "order": "normal"
+        },
+        {
+            "name": "vite:worker-import-meta-url",
+            "start": 1725009515957,
+            "end": 1725009515958,
+            "order": "normal"
+        },
+        {
+            "name": "vite:asset-import-meta-url",
+            "start": 1725009515958,
+            "end": 1725009515958,
+            "order": "normal"
+        },
+        {
+            "name": "vite:dynamic-import-vars",
+            "start": 1725009515958,
+            "end": 1725009515958,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-glob",
+            "start": 1725009515958,
+            "end": 1725009515958,
+            "order": "normal"
+        },
+        {
+            "name": "unplugin-auto-import",
+            "start": 1725009515958,
+            "end": 1725009515979,
+            "order": "post"
+        },
+        {
+            "name": "unplugin-vue-components",
+            "start": 1725009515979,
+            "end": 1725009515979,
+            "order": "post"
+        },
+        {
+            "name": "vite:client-inject",
+            "start": 1725009515979,
+            "end": 1725009515979,
+            "order": "normal"
+        },
+        {
+            "name": "vite:css-analysis",
+            "start": 1725009515979,
+            "end": 1725009515979,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-analysis",
+            "result": "import { createApp } from \"/node_modules/.vite/deps/vue.js?v=dc4298c9\";\nimport App from \"/packages/App.vue\";\nimport router from \"/packages/router/index.ts\";\nimport { domResize } from \"/packages/directives/domResize.ts\";\nimport \"/packages/theme-chalk/global.scss\";\nconst app = createApp(App);\napp.directive(\"domResize\", domResize);\napp.use(router).mount(\"#app\");\n",
+            "start": 1725009515979,
+            "end": 1725009515986,
+            "order": "normal",
+            "sourcemaps": null
+        }
+    ]
+}

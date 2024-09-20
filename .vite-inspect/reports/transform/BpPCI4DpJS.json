@@ -1,0 +1,110 @@
+{
+    "resolvedId": "/Users/haixiaonan/Desktop/test/vue3/bq-design/node_modules/.vite/deps/vue.js",
+    "transforms": [
+        {
+            "name": "vite:optimized-deps",
+            "result": "import {\n  BaseTransition,\n  BaseTransitionPropsValidators,\n  Comment,\n  DeprecationTypes,\n  EffectScope,\n  ErrorCodes,\n  ErrorTypeStrings,\n  Fragment,\n  KeepAlive,\n  ReactiveEffect,\n  Static,\n  Suspense,\n  Teleport,\n  Text,\n  TrackOpTypes,\n  Transition,\n  TransitionGroup,\n  TriggerOpTypes,\n  VueElement,\n  assertNumber,\n  callWithAsyncErrorHandling,\n  callWithErrorHandling,\n  camelize,\n  capitalize,\n  cloneVNode,\n  compatUtils,\n  compile,\n  computed,\n  createApp,\n  createBaseVNode,\n  createBlock,\n  createCommentVNode,\n  createElementBlock,\n  createHydrationRenderer,\n  createPropsRestProxy,\n  createRenderer,\n  createSSRApp,\n  createSlots,\n  createStaticVNode,\n  createTextVNode,\n  createVNode,\n  customRef,\n  defineAsyncComponent,\n  defineComponent,\n  defineCustomElement,\n  defineEmits,\n  defineExpose,\n  defineModel,\n  defineOptions,\n  defineProps,\n  defineSSRCustomElement,\n  defineSlots,\n  devtools,\n  effect,\n  effectScope,\n  getCurrentInstance,\n  getCurrentScope,\n  getTransitionRawChildren,\n  guardReactiveProps,\n  h,\n  handleError,\n  hasInjectionContext,\n  hydrate,\n  initCustomFormatter,\n  initDirectivesForSSR,\n  inject,\n  isMemoSame,\n  isProxy,\n  isReactive,\n  isReadonly,\n  isRef,\n  isRuntimeOnly,\n  isShallow,\n  isVNode,\n  markRaw,\n  mergeDefaults,\n  mergeModels,\n  mergeProps,\n  nextTick,\n  normalizeClass,\n  normalizeProps,\n  normalizeStyle,\n  onActivated,\n  onBeforeMount,\n  onBeforeUnmount,\n  onBeforeUpdate,\n  onDeactivated,\n  onErrorCaptured,\n  onMounted,\n  onRenderTracked,\n  onRenderTriggered,\n  onScopeDispose,\n  onServerPrefetch,\n  onUnmounted,\n  onUpdated,\n  openBlock,\n  popScopeId,\n  provide,\n  proxyRefs,\n  pushScopeId,\n  queuePostFlushCb,\n  reactive,\n  readonly,\n  ref,\n  registerRuntimeCompiler,\n  render,\n  renderList,\n  renderSlot,\n  resolveComponent,\n  resolveDirective,\n  resolveDynamicComponent,\n  resolveFilter,\n  resolveTransitionHooks,\n  setBlockTracking,\n  setDevtoolsHook,\n  setTransitionHooks,\n  shallowReactive,\n  shallowReadonly,\n  shallowRef,\n  ssrContextKey,\n  ssrUtils,\n  stop,\n  toDisplayString,\n  toHandlerKey,\n  toHandlers,\n  toRaw,\n  toRef,\n  toRefs,\n  toValue,\n  transformVNodeArgs,\n  triggerRef,\n  unref,\n  useAttrs,\n  useCssModule,\n  useCssVars,\n  useModel,\n  useSSRContext,\n  useSlots,\n  useTransitionState,\n  vModelCheckbox,\n  vModelDynamic,\n  vModelRadio,\n  vModelSelect,\n  vModelText,\n  vShow,\n  version,\n  warn,\n  watch,\n  watchEffect,\n  watchPostEffect,\n  watchSyncEffect,\n  withAsyncContext,\n  withCtx,\n  withDefaults,\n  withDirectives,\n  withKeys,\n  withMemo,\n  withModifiers,\n  withScopeId\n} from \"./chunk-7D5WLZMK.js\";\nimport \"./chunk-ZS7NZCD4.js\";\nexport {\n  BaseTransition,\n  BaseTransitionPropsValidators,\n  Comment,\n  DeprecationTypes,\n  EffectScope,\n  ErrorCodes,\n  ErrorTypeStrings,\n  Fragment,\n  KeepAlive,\n  ReactiveEffect,\n  Static,\n  Suspense,\n  Teleport,\n  Text,\n  TrackOpTypes,\n  Transition,\n  TransitionGroup,\n  TriggerOpTypes,\n  VueElement,\n  assertNumber,\n  callWithAsyncErrorHandling,\n  callWithErrorHandling,\n  camelize,\n  capitalize,\n  cloneVNode,\n  compatUtils,\n  compile,\n  computed,\n  createApp,\n  createBlock,\n  createCommentVNode,\n  createElementBlock,\n  createBaseVNode as createElementVNode,\n  createHydrationRenderer,\n  createPropsRestProxy,\n  createRenderer,\n  createSSRApp,\n  createSlots,\n  createStaticVNode,\n  createTextVNode,\n  createVNode,\n  customRef,\n  defineAsyncComponent,\n  defineComponent,\n  defineCustomElement,\n  defineEmits,\n  defineExpose,\n  defineModel,\n  defineOptions,\n  defineProps,\n  defineSSRCustomElement,\n  defineSlots,\n  devtools,\n  effect,\n  effectScope,\n  getCurrentInstance,\n  getCurrentScope,\n  getTransitionRawChildren,\n  guardReactiveProps,\n  h,\n  handleError,\n  hasInjectionContext,\n  hydrate,\n  initCustomFormatter,\n  initDirectivesForSSR,\n  inject,\n  isMemoSame,\n  isProxy,\n  isReactive,\n  isReadonly,\n  isRef,\n  isRuntimeOnly,\n  isShallow,\n  isVNode,\n  markRaw,\n  mergeDefaults,\n  mergeModels,\n  mergeProps,\n  nextTick,\n  normalizeClass,\n  normalizeProps,\n  normalizeStyle,\n  onActivated,\n  onBeforeMount,\n  onBeforeUnmount,\n  onBeforeUpdate,\n  onDeactivated,\n  onErrorCaptured,\n  onMounted,\n  onRenderTracked,\n  onRenderTriggered,\n  onScopeDispose,\n  onServerPrefetch,\n  onUnmounted,\n  onUpdated,\n  openBlock,\n  popScopeId,\n  provide,\n  proxyRefs,\n  pushScopeId,\n  queuePostFlushCb,\n  reactive,\n  readonly,\n  ref,\n  registerRuntimeCompiler,\n  render,\n  renderList,\n  renderSlot,\n  resolveComponent,\n  resolveDirective,\n  resolveDynamicComponent,\n  resolveFilter,\n  resolveTransitionHooks,\n  setBlockTracking,\n  setDevtoolsHook,\n  setTransitionHooks,\n  shallowReactive,\n  shallowReadonly,\n  shallowRef,\n  ssrContextKey,\n  ssrUtils,\n  stop,\n  toDisplayString,\n  toHandlerKey,\n  toHandlers,\n  toRaw,\n  toRef,\n  toRefs,\n  toValue,\n  transformVNodeArgs,\n  triggerRef,\n  unref,\n  useAttrs,\n  useCssModule,\n  useCssVars,\n  useModel,\n  useSSRContext,\n  useSlots,\n  useTransitionState,\n  vModelCheckbox,\n  vModelDynamic,\n  vModelRadio,\n  vModelSelect,\n  vModelText,\n  vShow,\n  version,\n  warn,\n  watch,\n  watchEffect,\n  watchPostEffect,\n  watchSyncEffect,\n  withAsyncContext,\n  withCtx,\n  withDefaults,\n  withDirectives,\n  withKeys,\n  withMemo,\n  withModifiers,\n  withScopeId\n};\n//# sourceMappingURL=vue.js.map\n",
+            "start": 1725009515986,
+            "end": 1725009516218,
+            "sourcemaps": null
+        },
+        {
+            "name": "vite:css",
+            "start": 1725009516218,
+            "end": 1725009516218,
+            "order": "normal"
+        },
+        {
+            "name": "vite:esbuild",
+            "start": 1725009516218,
+            "end": 1725009516218,
+            "order": "normal"
+        },
+        {
+            "name": "vite:json",
+            "start": 1725009516218,
+            "end": 1725009516218,
+            "order": "normal"
+        },
+        {
+            "name": "vite:worker",
+            "start": 1725009516218,
+            "end": 1725009516218,
+            "order": "normal"
+        },
+        {
+            "name": "vite:vue",
+            "start": 1725009516218,
+            "end": 1725009516218,
+            "order": "normal"
+        },
+        {
+            "name": "vite:define",
+            "start": 1725009516218,
+            "end": 1725009516218,
+            "order": "normal"
+        },
+        {
+            "name": "vite:css-post",
+            "start": 1725009516218,
+            "end": 1725009516218,
+            "order": "normal"
+        },
+        {
+            "name": "vite:worker-import-meta-url",
+            "start": 1725009516218,
+            "end": 1725009516218,
+            "order": "normal"
+        },
+        {
+            "name": "vite:asset-import-meta-url",
+            "start": 1725009516218,
+            "end": 1725009516218,
+            "order": "normal"
+        },
+        {
+            "name": "vite:dynamic-import-vars",
+            "start": 1725009516218,
+            "end": 1725009516218,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-glob",
+            "start": 1725009516218,
+            "end": 1725009516218,
+            "order": "normal"
+        },
+        {
+            "name": "unplugin-auto-import",
+            "start": 1725009516218,
+            "end": 1725009516218,
+            "order": "post"
+        },
+        {
+            "name": "unplugin-vue-components",
+            "start": 1725009516218,
+            "end": 1725009516218,
+            "order": "post"
+        },
+        {
+            "name": "vite:client-inject",
+            "start": 1725009516218,
+            "end": 1725009516218,
+            "order": "normal"
+        },
+        {
+            "name": "vite:css-analysis",
+            "start": 1725009516218,
+            "end": 1725009516218,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-analysis",
+            "result": "import {\n  BaseTransition,\n  BaseTransitionPropsValidators,\n  Comment,\n  DeprecationTypes,\n  EffectScope,\n  ErrorCodes,\n  ErrorTypeStrings,\n  Fragment,\n  KeepAlive,\n  ReactiveEffect,\n  Static,\n  Suspense,\n  Teleport,\n  Text,\n  TrackOpTypes,\n  Transition,\n  TransitionGroup,\n  TriggerOpTypes,\n  VueElement,\n  assertNumber,\n  callWithAsyncErrorHandling,\n  callWithErrorHandling,\n  camelize,\n  capitalize,\n  cloneVNode,\n  compatUtils,\n  compile,\n  computed,\n  createApp,\n  createBaseVNode,\n  createBlock,\n  createCommentVNode,\n  createElementBlock,\n  createHydrationRenderer,\n  createPropsRestProxy,\n  createRenderer,\n  createSSRApp,\n  createSlots,\n  createStaticVNode,\n  createTextVNode,\n  createVNode,\n  customRef,\n  defineAsyncComponent,\n  defineComponent,\n  defineCustomElement,\n  defineEmits,\n  defineExpose,\n  defineModel,\n  defineOptions,\n  defineProps,\n  defineSSRCustomElement,\n  defineSlots,\n  devtools,\n  effect,\n  effectScope,\n  getCurrentInstance,\n  getCurrentScope,\n  getTransitionRawChildren,\n  guardReactiveProps,\n  h,\n  handleError,\n  hasInjectionContext,\n  hydrate,\n  initCustomFormatter,\n  initDirectivesForSSR,\n  inject,\n  isMemoSame,\n  isProxy,\n  isReactive,\n  isReadonly,\n  isRef,\n  isRuntimeOnly,\n  isShallow,\n  isVNode,\n  markRaw,\n  mergeDefaults,\n  mergeModels,\n  mergeProps,\n  nextTick,\n  normalizeClass,\n  normalizeProps,\n  normalizeStyle,\n  onActivated,\n  onBeforeMount,\n  onBeforeUnmount,\n  onBeforeUpdate,\n  onDeactivated,\n  onErrorCaptured,\n  onMounted,\n  onRenderTracked,\n  onRenderTriggered,\n  onScopeDispose,\n  onServerPrefetch,\n  onUnmounted,\n  onUpdated,\n  openBlock,\n  popScopeId,\n  provide,\n  proxyRefs,\n  pushScopeId,\n  queuePostFlushCb,\n  reactive,\n  readonly,\n  ref,\n  registerRuntimeCompiler,\n  render,\n  renderList,\n  renderSlot,\n  resolveComponent,\n  resolveDirective,\n  resolveDynamicComponent,\n  resolveFilter,\n  resolveTransitionHooks,\n  setBlockTracking,\n  setDevtoolsHook,\n  setTransitionHooks,\n  shallowReactive,\n  shallowReadonly,\n  shallowRef,\n  ssrContextKey,\n  ssrUtils,\n  stop,\n  toDisplayString,\n  toHandlerKey,\n  toHandlers,\n  toRaw,\n  toRef,\n  toRefs,\n  toValue,\n  transformVNodeArgs,\n  triggerRef,\n  unref,\n  useAttrs,\n  useCssModule,\n  useCssVars,\n  useModel,\n  useSSRContext,\n  useSlots,\n  useTransitionState,\n  vModelCheckbox,\n  vModelDynamic,\n  vModelRadio,\n  vModelSelect,\n  vModelText,\n  vShow,\n  version,\n  warn,\n  watch,\n  watchEffect,\n  watchPostEffect,\n  watchSyncEffect,\n  withAsyncContext,\n  withCtx,\n  withDefaults,\n  withDirectives,\n  withKeys,\n  withMemo,\n  withModifiers,\n  withScopeId\n} from \"/node_modules/.vite/deps/chunk-7D5WLZMK.js?v=8d330f83\";\nimport \"/node_modules/.vite/deps/chunk-ZS7NZCD4.js?v=8d330f83\";\nexport {\n  BaseTransition,\n  BaseTransitionPropsValidators,\n  Comment,\n  DeprecationTypes,\n  EffectScope,\n  ErrorCodes,\n  ErrorTypeStrings,\n  Fragment,\n  KeepAlive,\n  ReactiveEffect,\n  Static,\n  Suspense,\n  Teleport,\n  Text,\n  TrackOpTypes,\n  Transition,\n  TransitionGroup,\n  TriggerOpTypes,\n  VueElement,\n  assertNumber,\n  callWithAsyncErrorHandling,\n  callWithErrorHandling,\n  camelize,\n  capitalize,\n  cloneVNode,\n  compatUtils,\n  compile,\n  computed,\n  createApp,\n  createBlock,\n  createCommentVNode,\n  createElementBlock,\n  createBaseVNode as createElementVNode,\n  createHydrationRenderer,\n  createPropsRestProxy,\n  createRenderer,\n  createSSRApp,\n  createSlots,\n  createStaticVNode,\n  createTextVNode,\n  createVNode,\n  customRef,\n  defineAsyncComponent,\n  defineComponent,\n  defineCustomElement,\n  defineEmits,\n  defineExpose,\n  defineModel,\n  defineOptions,\n  defineProps,\n  defineSSRCustomElement,\n  defineSlots,\n  devtools,\n  effect,\n  effectScope,\n  getCurrentInstance,\n  getCurrentScope,\n  getTransitionRawChildren,\n  guardReactiveProps,\n  h,\n  handleError,\n  hasInjectionContext,\n  hydrate,\n  initCustomFormatter,\n  initDirectivesForSSR,\n  inject,\n  isMemoSame,\n  isProxy,\n  isReactive,\n  isReadonly,\n  isRef,\n  isRuntimeOnly,\n  isShallow,\n  isVNode,\n  markRaw,\n  mergeDefaults,\n  mergeModels,\n  mergeProps,\n  nextTick,\n  normalizeClass,\n  normalizeProps,\n  normalizeStyle,\n  onActivated,\n  onBeforeMount,\n  onBeforeUnmount,\n  onBeforeUpdate,\n  onDeactivated,\n  onErrorCaptured,\n  onMounted,\n  onRenderTracked,\n  onRenderTriggered,\n  onScopeDispose,\n  onServerPrefetch,\n  onUnmounted,\n  onUpdated,\n  openBlock,\n  popScopeId,\n  provide,\n  proxyRefs,\n  pushScopeId,\n  queuePostFlushCb,\n  reactive,\n  readonly,\n  ref,\n  registerRuntimeCompiler,\n  render,\n  renderList,\n  renderSlot,\n  resolveComponent,\n  resolveDirective,\n  resolveDynamicComponent,\n  resolveFilter,\n  resolveTransitionHooks,\n  setBlockTracking,\n  setDevtoolsHook,\n  setTransitionHooks,\n  shallowReactive,\n  shallowReadonly,\n  shallowRef,\n  ssrContextKey,\n  ssrUtils,\n  stop,\n  toDisplayString,\n  toHandlerKey,\n  toHandlers,\n  toRaw,\n  toRef,\n  toRefs,\n  toValue,\n  transformVNodeArgs,\n  triggerRef,\n  unref,\n  useAttrs,\n  useCssModule,\n  useCssVars,\n  useModel,\n  useSSRContext,\n  useSlots,\n  useTransitionState,\n  vModelCheckbox,\n  vModelDynamic,\n  vModelRadio,\n  vModelSelect,\n  vModelText,\n  vShow,\n  version,\n  warn,\n  watch,\n  watchEffect,\n  watchPostEffect,\n  watchSyncEffect,\n  withAsyncContext,\n  withCtx,\n  withDefaults,\n  withDirectives,\n  withKeys,\n  withMemo,\n  withModifiers,\n  withScopeId\n};\n//# sourceMappingURL=vue.js.map\n",
+            "start": 1725009516218,
+            "end": 1725009516219,
+            "order": "normal",
+            "sourcemaps": null
+        }
+    ]
+}

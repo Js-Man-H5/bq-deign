@@ -1,0 +1,110 @@
+{
+    "resolvedId": "/Users/haixiaonan/Desktop/test/vue3/bq-design/node_modules/.vite/deps/resize-observer-polyfill.js",
+    "transforms": [
+        {
+            "name": "vite:optimized-deps",
+            "result": "import {\n  ResizeObserver_es_default\n} from \"./chunk-LUJC7HAA.js\";\nimport \"./chunk-ZS7NZCD4.js\";\nexport {\n  ResizeObserver_es_default as default\n};\n//# sourceMappingURL=resize-observer-polyfill.js.map\n",
+            "start": 1725009516152,
+            "end": 1725009516219,
+            "sourcemaps": null
+        },
+        {
+            "name": "vite:css",
+            "start": 1725009516219,
+            "end": 1725009516219,
+            "order": "normal"
+        },
+        {
+            "name": "vite:esbuild",
+            "start": 1725009516219,
+            "end": 1725009516219,
+            "order": "normal"
+        },
+        {
+            "name": "vite:json",
+            "start": 1725009516219,
+            "end": 1725009516219,
+            "order": "normal"
+        },
+        {
+            "name": "vite:worker",
+            "start": 1725009516219,
+            "end": 1725009516219,
+            "order": "normal"
+        },
+        {
+            "name": "vite:vue",
+            "start": 1725009516219,
+            "end": 1725009516219,
+            "order": "normal"
+        },
+        {
+            "name": "vite:define",
+            "start": 1725009516219,
+            "end": 1725009516219,
+            "order": "normal"
+        },
+        {
+            "name": "vite:css-post",
+            "start": 1725009516219,
+            "end": 1725009516219,
+            "order": "normal"
+        },
+        {
+            "name": "vite:worker-import-meta-url",
+            "start": 1725009516219,
+            "end": 1725009516219,
+            "order": "normal"
+        },
+        {
+            "name": "vite:asset-import-meta-url",
+            "start": 1725009516219,
+            "end": 1725009516219,
+            "order": "normal"
+        },
+        {
+            "name": "vite:dynamic-import-vars",
+            "start": 1725009516219,
+            "end": 1725009516219,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-glob",
+            "start": 1725009516219,
+            "end": 1725009516219,
+            "order": "normal"
+        },
+        {
+            "name": "unplugin-auto-import",
+            "start": 1725009516219,
+            "end": 1725009516219,
+            "order": "post"
+        },
+        {
+            "name": "unplugin-vue-components",
+            "start": 1725009516219,
+            "end": 1725009516219,
+            "order": "post"
+        },
+        {
+            "name": "vite:client-inject",
+            "start": 1725009516219,
+            "end": 1725009516219,
+            "order": "normal"
+        },
+        {
+            "name": "vite:css-analysis",
+            "start": 1725009516219,
+            "end": 1725009516219,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-analysis",
+            "result": "import {\n  ResizeObserver_es_default\n} from \"/node_modules/.vite/deps/chunk-LUJC7HAA.js?v=8d330f83\";\nimport \"/node_modules/.vite/deps/chunk-ZS7NZCD4.js?v=8d330f83\";\nexport {\n  ResizeObserver_es_default as default\n};\n//# sourceMappingURL=resize-observer-polyfill.js.map\n",
+            "start": 1725009516219,
+            "end": 1725009516220,
+            "order": "normal",
+            "sourcemaps": null
+        }
+    ]
+}

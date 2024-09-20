@@ -1,0 +1,111 @@
+{
+    "resolvedId": "/Users/haixiaonan/Desktop/test/vue3/bq-design/node_modules/.pnpm/vite@5.2.10_@types+node@20.5.1_less@4.2.0_sass@1.77.2/node_modules/vite/dist/client/env.mjs",
+    "transforms": [
+        {
+            "name": "__load__",
+            "result": "const context = (() => {\n    if (typeof globalThis !== 'undefined') {\n        return globalThis;\n    }\n    else if (typeof self !== 'undefined') {\n        return self;\n    }\n    else if (typeof window !== 'undefined') {\n        return window;\n    }\n    else {\n        return Function('return this')();\n    }\n})();\n// assign defines\nconst defines = __DEFINES__;\nObject.keys(defines).forEach((key) => {\n    const segments = key.split('.');\n    let target = context;\n    for (let i = 0; i < segments.length; i++) {\n        const segment = segments[i];\n        if (i === segments.length - 1) {\n            target[segment] = defines[key];\n        }\n        else {\n            target = target[segment] || (target[segment] = {});\n        }\n    }\n});\n                                \n",
+            "start": 1725009516165,
+            "end": 1725009516165
+        },
+        {
+            "name": "vite:css",
+            "start": 1725009516165,
+            "end": 1725009516165,
+            "order": "normal"
+        },
+        {
+            "name": "vite:esbuild",
+            "start": 1725009516165,
+            "end": 1725009516165,
+            "order": "normal"
+        },
+        {
+            "name": "vite:json",
+            "start": 1725009516165,
+            "end": 1725009516165,
+            "order": "normal"
+        },
+        {
+            "name": "vite:worker",
+            "start": 1725009516165,
+            "end": 1725009516165,
+            "order": "normal"
+        },
+        {
+            "name": "vite:vue",
+            "start": 1725009516165,
+            "end": 1725009516165,
+            "order": "normal"
+        },
+        {
+            "name": "vite:define",
+            "start": 1725009516165,
+            "end": 1725009516165,
+            "order": "normal"
+        },
+        {
+            "name": "vite:css-post",
+            "start": 1725009516165,
+            "end": 1725009516165,
+            "order": "normal"
+        },
+        {
+            "name": "vite:worker-import-meta-url",
+            "start": 1725009516165,
+            "end": 1725009516165,
+            "order": "normal"
+        },
+        {
+            "name": "vite:asset-import-meta-url",
+            "start": 1725009516165,
+            "end": 1725009516165,
+            "order": "normal"
+        },
+        {
+            "name": "vite:dynamic-import-vars",
+            "start": 1725009516165,
+            "end": 1725009516165,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-glob",
+            "start": 1725009516165,
+            "end": 1725009516165,
+            "order": "normal"
+        },
+        {
+            "name": "unplugin-auto-import",
+            "start": 1725009516165,
+            "end": 1725009516165,
+            "order": "post"
+        },
+        {
+            "name": "unplugin-vue-components",
+            "start": 1725009516165,
+            "end": 1725009516165,
+            "order": "post"
+        },
+        {
+            "name": "vite:client-inject",
+            "result": "const context = (() => {\n    if (typeof globalThis !== 'undefined') {\n        return globalThis;\n    }\n    else if (typeof self !== 'undefined') {\n        return self;\n    }\n    else if (typeof window !== 'undefined') {\n        return window;\n    }\n    else {\n        return Function('return this')();\n    }\n})();\n// assign defines\nconst defines = {\"__VUE_OPTIONS_API__\": true, \"__VUE_PROD_DEVTOOLS__\": false, \"__VUE_PROD_HYDRATION_MISMATCH_DETAILS__\": false};\nObject.keys(defines).forEach((key) => {\n    const segments = key.split('.');\n    let target = context;\n    for (let i = 0; i < segments.length; i++) {\n        const segment = segments[i];\n        if (i === segments.length - 1) {\n            target[segment] = defines[key];\n        }\n        else {\n            target = target[segment] || (target[segment] = {});\n        }\n    }\n});\n                                \n",
+            "start": 1725009516165,
+            "end": 1725009516165,
+            "order": "normal",
+            "sourcemaps": null
+        },
+        {
+            "name": "vite:css-analysis",
+            "start": 1725009516165,
+            "end": 1725009516165,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-analysis",
+            "result": "const context = (() => {\n    if (typeof globalThis !== 'undefined') {\n        return globalThis;\n    }\n    else if (typeof self !== 'undefined') {\n        return self;\n    }\n    else if (typeof window !== 'undefined') {\n        return window;\n    }\n    else {\n        return Function('return this')();\n    }\n})();\n// assign defines\nconst defines = {\"__VUE_OPTIONS_API__\": true, \"__VUE_PROD_DEVTOOLS__\": false, \"__VUE_PROD_HYDRATION_MISMATCH_DETAILS__\": false};\nObject.keys(defines).forEach((key) => {\n    const segments = key.split('.');\n    let target = context;\n    for (let i = 0; i < segments.length; i++) {\n        const segment = segments[i];\n        if (i === segments.length - 1) {\n            target[segment] = defines[key];\n        }\n        else {\n            target = target[segment] || (target[segment] = {});\n        }\n    }\n});\n                                \n",
+            "start": 1725009516165,
+            "end": 1725009516165,
+            "order": "normal",
+            "sourcemaps": null
+        }
+    ]
+}

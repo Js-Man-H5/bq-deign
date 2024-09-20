@@ -1,0 +1,80 @@
+{
+    "resolvedId": "/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/theme-chalk/global.scss",
+    "transforms": [
+        {
+            "name": "__load__",
+            "result": "",
+            "start": 1725009516160,
+            "end": 1725009516160,
+            "sourcemaps": {
+                "mappings": ""
+            }
+        },
+        {
+            "name": "vite:css-post",
+            "result": "import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/theme-chalk/global.scss\"\nconst __vite__css = \"\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))",
+            "start": 1725009516160,
+            "end": 1725009516160,
+            "order": "normal",
+            "sourcemaps": {
+                "mappings": ""
+            }
+        },
+        {
+            "name": "vite:worker-import-meta-url",
+            "start": 1725009516160,
+            "end": 1725009516160,
+            "order": "normal"
+        },
+        {
+            "name": "vite:asset-import-meta-url",
+            "start": 1725009516160,
+            "end": 1725009516160,
+            "order": "normal"
+        },
+        {
+            "name": "vite:dynamic-import-vars",
+            "start": 1725009516160,
+            "end": 1725009516160,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-glob",
+            "start": 1725009516160,
+            "end": 1725009516160,
+            "order": "normal"
+        },
+        {
+            "name": "unplugin-auto-import",
+            "start": 1725009516160,
+            "end": 1725009516161,
+            "order": "post"
+        },
+        {
+            "name": "unplugin-vue-components",
+            "start": 1725009516161,
+            "end": 1725009516161,
+            "order": "post"
+        },
+        {
+            "name": "vite:client-inject",
+            "start": 1725009516161,
+            "end": 1725009516161,
+            "order": "normal"
+        },
+        {
+            "name": "vite:css-analysis",
+            "start": 1725009516161,
+            "end": 1725009516161,
+            "order": "normal"
+        },
+        {
+            "name": "vite:import-analysis",
+            "result": "import { createHotContext as __vite__createHotContext } from \"/@vite/client\";import.meta.hot = __vite__createHotContext(\"/packages/theme-chalk/global.scss\");import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"/Users/haixiaonan/Desktop/test/vue3/bq-design/packages/theme-chalk/global.scss\"\nconst __vite__css = \"\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))",
+            "start": 1725009516161,
+            "end": 1725009516161,
+            "order": "normal",
+            "sourcemaps": null
+        }
+    ]
+}
