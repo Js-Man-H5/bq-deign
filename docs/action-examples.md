@@ -1,13 +1,17 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-09-20 09:19:39
- * @LastEditTime: 2024-09-20 09:52:47
+ * @LastEditTime: 2024-09-23 10:55:37
  * @Description:
 -->
 
 # Action 组件
 
 `意义： 让组件内部像组件一样，自上而下的数据流`
+
+::: tip
+使用场景：支持所有使用hooks的组件
+:::
 
 ## 基础示例
 

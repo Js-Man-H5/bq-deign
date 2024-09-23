@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2024-05-14 15:30:17
- * @LastEditTime: 2024-08-27 14:49:57
+ * @LastEditTime: 2024-09-23 10:30:46
  * @Description:
  */
 import { defineConfig } from "vitepress";
@@ -30,13 +30,14 @@ export default defineConfig({
                 text: "Examples",
                 items: [
                     { text: "操作指南", link: "/guide-examples" },
-                    { text: "3D饼图", link: "/pie-examples" },
-                    { text: "大屏适配", link: "/scale-box-examples" },
-                    { text: "SelectAll", link: "/select-examples" },
-                    { text: "数字翻牌器", link: "/number-animate-examples" },
-                    { text: "ScrollBar", link: "/scroll-bar-examples" },
-                    { text: "可视组件", link: "/view-examples" },
-                    { text: "Action组件", link: "/action-examples" },
+                    { text: "BqPie 3D饼图", link: "/pie-examples" },
+                    { text: "BqScale 大屏适配容器", link: "/scale-box-examples" },
+                    { text: "BqSelectAll 全选筛选框", link: "/select-examples" },
+                    { text: "BqNumberAnimate 数字翻牌器", link: "/number-animate-examples" },
+                    { text: "BqScrollBar 自定义滚动条", link: "/scroll-bar-examples" },
+                    { text: "BqVisibleComponent 可视组件", link: "/view-examples" },
+                    { text: "BqAction 性能优化", link: "/action-examples" },
+                    { text: "更新日志", link: "/update-log-examples" },
                     // { text: "Runtime API Examples", link: "/api-examples" },
                 ],
             },

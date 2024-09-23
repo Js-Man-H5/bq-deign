@@ -17,7 +17,7 @@
 
 <script setup lang="ts">
 import type { PropsType } from "./type";
-defineOptions({ name: "NumberAnimate" });
+defineOptions({ name: "BqNumberAnimate" });
 const orderNum = ref(["0"]);
 const oldNum = ref(["0"]);
 const maxHeight = ref("20px");
