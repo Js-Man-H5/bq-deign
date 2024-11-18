@@ -1,7 +1,7 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-11-18 09:27:39
- * @LastEditTime: 2024-11-18 16:07:27
+ * @LastEditTime: 2024-11-18 16:57:33
  * @Description:
 -->
 <template>
@@ -9,7 +9,9 @@
         <Card v-if="flag" title="The is a await component">
             <Await :request="fetchData" :options="queryData" :spinProps="spinProps">
                 <template #default="{ data }">
-                    <div style="width: 200" v-for="item in data">执行完成:{{ item }}</div>
+                    <div style="width: 200" v-for="(item, key) in data">
+                        <template :key="key">执行完成:{{ item }}</template>
+                    </div>
                 </template>
                 <template #skeleton>
                     <Skeleton active :paragraph="{ rows: 5 }" />
