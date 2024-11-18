@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2024-06-06 10:17:30
- * @LastEditTime: 2024-08-27 11:24:25
+ * @LastEditTime: 2024-11-18 16:33:37
  * @Description:
  */
 declare module "vue" {
@@ -14,5 +14,6 @@ declare module "vue" {
         BqScaleBox: (typeof import("../packages/index"))["BqScaleBox"];
         BqScrollBar: (typeof import("../packages/index"))["BqScrollBar"];
         BqVisibleComponent: (typeof import("../packages/index"))["BqVisibleComponent"];
+        BqAwait: (typeof import("../packages/index"))["BqAwait"];
     }
 }
