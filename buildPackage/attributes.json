@@ -1,1 +1,27 @@
-{"NumberAnimate/value":{"type":"number","description":""},"NumberAnimate/math":{"type":"MathType","description":""},"NumberAnimate/textMaxWidth":{"type":"string","description":""},"NumberAnimate/duration":{"type":"number","description":""},"NumberAnimate/effect":{"type":"string","description":""},"BqScaleBox/width":{"type":"number","description":""},"BqScaleBox/height":{"type":"number","description":""}}
+{
+    "BqAction/useAction": { "type": "TSFunctionType", "description": "" },
+    "BqAction/options": { "type": "E", "description": "" },
+    "BqNumberAnimate/value": { "type": "number", "description": "" },
+    "BqNumberAnimate/math": { "type": "MathType", "description": "" },
+    "BqNumberAnimate/textMaxWidth": { "type": "string", "description": "" },
+    "BqNumberAnimate/duration": { "type": "number", "description": "" },
+    "BqNumberAnimate/effect": { "type": "string", "description": "" },
+    "BqPie/data": { "type": "Array", "description": "" },
+    "BqPie/colorList": { "type": "Array", "description": "" },
+    "BqPie/innerRadius": { "type": "number", "description": "" },
+    "BqPie/outRadius": { "type": "number", "description": "" },
+    "BqPie/depth": { "type": "number", "description": "" },
+    "BqPie/centerTooltip": { "type": "boolean", "description": "" },
+    "BqScaleBox/width": { "type": "number", "description": "" },
+    "BqScaleBox/height": { "type": "number", "description": "" },
+    "Bar/thumbWrapperSize": { "type": "number", "description": "" },
+    "Bar/showCoord": { "type": "{\n    x: boolean;\n    y: boolean;\n}", "description": "" },
+    "Bar/handleThumbClick": { "type": "TSFunctionType", "description": "" },
+    "Bar/className": { "type": "string", "description": "" },
+    "Bar/styleObj": { "type": "StyleValue", "description": "" },
+    "Bar/direction": { "type": "DIRECTION_ENUM", "description": "" },
+    "BqScrollBar/thumbWrapperSize": { "type": "number", "description": "" },
+    "BqScrollBar/autoHide": { "type": "union", "description": "" },
+    "BqScrollBar/barMinSize": { "type": "number", "description": "" },
+    "BqVisibleComponent/options": { "type": "IntersectionObserverInit", "description": "" }
+}

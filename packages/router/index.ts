@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2022-11-23 13:43:29
- * @LastEditTime: 2024-09-18 15:05:09
+ * @LastEditTime: 2024-11-18 09:30:41
  * @Description:
  */
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
@@ -69,6 +69,14 @@ const routes: RouteRecordRaw[] = [
             title: "action",
         },
         component: () => import(/* webpackChunkName: "action" */ "@/examples/action/components/BasicsAction.vue"),
+    },
+    {
+        path: "/await",
+        name: "await",
+        meta: {
+            title: "basicsAwait",
+        },
+        component: () => import(/* webpackChunkName: "basicsAwait" */ "@/examples/await/components/BasicsAwait.vue"),
     },
 ];
 const router = createRouter({

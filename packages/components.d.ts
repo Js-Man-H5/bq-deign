@@ -8,6 +8,7 @@ export {};
 declare module 'vue' {
   export interface GlobalComponents {
     Action: typeof import('./components/action/Action.vue')['default']
+    Await: typeof import('./components/await/Await.vue')['default']
     Bar: typeof import('./components/scrollBar/Bar.vue')['default']
     Button: typeof import('./components/button/Button.vue')['default']
     Demo: typeof import('./components/scrollBar/demo/demo.vue')['default']

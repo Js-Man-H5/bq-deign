@@ -1,7 +1,7 @@
 /*
  * @Author: jack.hai
  * @Date: 2024-05-14 15:30:17
- * @LastEditTime: 2024-09-23 10:30:46
+ * @LastEditTime: 2024-11-18 15:53:26
  * @Description:
  */
 import { defineConfig } from "vitepress";
@@ -37,6 +37,7 @@ export default defineConfig({
                     { text: "BqScrollBar 自定义滚动条", link: "/scroll-bar-examples" },
                     { text: "BqVisibleComponent 可视组件", link: "/view-examples" },
                     { text: "BqAction 性能优化", link: "/action-examples" },
+                    { text: "BqAwait 异步加载", link: "/await-examples" },
                     { text: "更新日志", link: "/update-log-examples" },
                     // { text: "Runtime API Examples", link: "/api-examples" },
                 ],

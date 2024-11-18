@@ -1,1 +1,11 @@
-{"BqButton":{"attributes":[]},"NumberAnimate":{"attributes":["value","math","textMaxWidth","duration","effect"]},"BqScaleBox":{"attributes":["width","height"]},"BqSelectAll":{"attributes":[]}}
+{
+    "BqAction": { "attributes": ["useAction", "options"] },
+    "BqButton": { "attributes": [] },
+    "BqNumberAnimate": { "attributes": ["value", "math", "textMaxWidth", "duration", "effect"] },
+    "BqPie": { "attributes": ["data", "colorList", "innerRadius", "outRadius", "depth", "centerTooltip"] },
+    "BqScaleBox": { "attributes": ["width", "height"] },
+    "Bar": { "attributes": ["thumbWrapperSize", "showCoord", "handleThumbClick", "className", "styleObj", "direction"] },
+    "BqScrollBar": { "attributes": ["thumbWrapperSize", "autoHide", "barMinSize"] },
+    "BqSelectAll": { "attributes": [] },
+    "BqVisibleComponent": { "attributes": ["options"] }
+}
