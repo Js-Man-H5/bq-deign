@@ -1,35 +1,31 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-11-18 09:35:37
- * @LastEditTime: 2024-11-18 16:03:15
+ * @LastEditTime: 2024-11-25 10:01:08
  * @Description:
 -->
 <template>
-    <slot v-if="error" name="error" v-bind="{ error }"></slot>
-    <slot v-else-if="!onceStatus" name="skeleton"></slot>
-    <Spin v-else v-bind="props.spinProps" :spinning="loading">
-        <slot v-bind="Object.assign({} as T, { data, loading })"></slot>
+    <slot v-if="error && props.useError" name="error" v-bind="{ error }"></slot>
+    <slot v-else-if="!onceStatus && useSkeleton" name="skeleton"></slot>
+    <Spin v-else-if="props.useLoading" v-bind="props.spinProps" :spinning="loading">
+        <slot v-bind="Object.assign({} as T, { data, loading, error, onceStatus })"></slot>
     </Spin>
+    <slot v-else v-bind="Object.assign({} as T, { data, loading, error, onceStatus })"></slot>
 </template>
 
 <script setup lang="ts" generic="T extends Record<string, any>, E = any">
-import type { SlotProps } from "./type";
-import type { SpinProps } from "ant-design-vue";
+import type { SlotProps, AwaitProps } from "./type";
 import { Spin } from "ant-design-vue";
 defineOptions({
     name: "BqAwait",
 });
 
-const props = withDefaults(
-    defineProps<{
-        request: (options?: E) => Promise<T>;
-        spinProps?: SpinProps;
-        options?: E;
-    }>(),
-    {
-        spinProps: () => ({ tip: "数据正在加载中" }),
-    },
-);
+const props = withDefaults(defineProps<AwaitProps<T, E>>(), {
+    spinProps: () => ({ tip: "数据正在加载中" }),
+    useLoading: true,
+    useSkeleton: true,
+    useError: true,
+});
 
 // 初次加载适用于骨架屏
 const onceStatus = ref(false);
@@ -38,11 +34,28 @@ const data = ref<T>();
 const error = ref();
 
 const slot = defineSlots<{
-    default: ({ data, loading }: SlotProps<T>) => VNode | VNode[];
+    /**
+     * @description: 错误插槽
+     * @param data 返回对应数据
+     * @param loading 返回loading状态
+     * @param error 返回错误状态
+     * @param onceStatus 初次加载状态
+     */
+    default: ({ data, loading, error, onceStatus }: SlotProps<T>) => VNode | VNode[];
+    /**
+     * @description: 骨架屏插槽
+     */
     skeleton: () => VNode | VNode[];
+    /**
+     * @description: 错误插槽
+     */
     error: () => VNode | VNode[];
 }>();
 
+/**
+ * @description: 处理接口数据
+ * @return {*}
+ */
 const handleRequest = async () => {
     if (error) {
         error.value = null;
@@ -55,6 +68,7 @@ const handleRequest = async () => {
         error.value = err;
     } finally {
         loading.value = false;
+        console.log("end", loading.value, error.value);
         onceStatus.value = true;
     }
 };

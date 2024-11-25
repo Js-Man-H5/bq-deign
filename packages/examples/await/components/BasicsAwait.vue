@@ -1,7 +1,7 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-11-18 09:27:39
- * @LastEditTime: 2024-11-18 17:51:31
+ * @LastEditTime: 2024-11-25 10:22:57
  * @Description:
 -->
 <template>
@@ -12,9 +12,10 @@
                     <div style="width: 200" v-for="(item, key) in data" :key="key">执行完成:{{ item }}</div>
                 </template>
                 <template #skeleton>
+                    骨架屏
                     <Skeleton active :paragraph="{ rows: 5 }" />
                 </template>
-                <template #error> <Result status="warning" title="There are some problems with your operation."> </Result></template>
+                <template #error> <Result status="warning" title="The is a error"> </Result></template>
             </Await>
         </Card>
         <Space style="margin-top: 16px">

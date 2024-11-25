@@ -76,7 +76,7 @@ const routes: RouteRecordRaw[] = [
         meta: {
             title: "basicsAwait",
         },
-        component: () => import(/* webpackChunkName: "basicsAwait" */ "@/examples/await/components/BasicsAwait.vue"),
+        component: () => import(/* webpackChunkName: "basicsAwait" */ "@/examples/await/components/CustomStatusAwait.vue"),
     },
 ];
 const router = createRouter({

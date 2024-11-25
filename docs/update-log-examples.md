@@ -1,11 +1,15 @@
 <!--
  * @Author: jack.hai
  * @Date: 2024-09-23 09:21:38
- * @LastEditTime: 2024-11-18 15:48:17
+ * @LastEditTime: 2024-11-25 10:26:02
  * @Description:
 -->
 
 # 更新日志
+
+## 2024-11-25
+
+1. **update:** 更新`Await`组件、支持只定义loading、插槽,同时更新`Await`示例
 
 ## 2024-11-18
 
